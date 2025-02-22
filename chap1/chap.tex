@@ -1,0 +1,35 @@
+\ifx\allfiles\undefined
+\documentclass[12pt, a4paper, oneside, UTF8]{ctexbook}
+\def\path{../config}
+\input{../config/_config}
+\begin{document}
+% \input{../config/cover}
+\else
+\fi
+%标题
+\chapter{域}
+	\section{域的定义}
+		\begin{defn}{域}{}
+			设$F$是一个集合，如果存在两个运算$+:F \times F \rightarrow F$和$\cdot :F \times F \rightarrow F$，分别称为加法和乘法，并且满足：
+			
+			\ding{172}（加法单位元存在）存在一个元素$0_F \in F$，称为零元，$\forall x \in F,x+0_F=0_F+x=x$
+			
+			\ding{173}（加法逆存在）$ \forall x \in F,\exists (-x) \in F,\text{s.t.}x+(-x)=(-x)+x=0_F$，$(-x)$称为$x$的加法逆元
+			
+			\ding{174}（加法交换律）$\forall x,y \in F,x+y = y+x$
+			
+			\ding{175}（加法结合律）$\forall x,y,z \in F,(x+y)+z = x+(y+z)$
+			
+			\ding{176}（乘法单位元存在）存在一个元素$1_F \in F,1_F \neq 0_F$，称为一元，$\forall x \in F,x\cdot 1_F=1_F \cdot x = x$
+			
+			\ding{177}（乘法逆存在）$\forall x \in F-{0_F},\exists x^-1 \in F,\text{s.t. }x\cdot x^-1=x^-1 \cdot x = 1$，$x^-1$称为$x$的乘法逆元
+			
+			\ding{178}（乘法交换律）$\forall x,y \in F,x\cdot y = y\cdot x$
+			
+			\ding{179}（乘法结合律）$\forall x,y,z \in F,(x\cdot y)\cdot z = x\cdot (y\cdot z)$
+			
+			\ding{180}（乘法分配律）$\forall x,y,z \in F,x\cdot(y+z)=x\cdot y+x\cdot z$
+		\end{defn}
+\ifx\allfiles\undefined
+\end{document}
+\fi
