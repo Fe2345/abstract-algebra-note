@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  22 FEB 2025 13:08
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  24 FEB 2025 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1562,17 +1562,27 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
 
  (./chap1/chap.tex
 第一章
-) [0
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 42.
+
+[0
 
 
 
 
 ]
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 46.
+
+LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 
+84.
+[1]) [2]
 \openout2 = `chap16/chap.aux'.
 
  (./chap16/chap.tex
 第二章
-) [1
+) [3
 
 
 
@@ -1584,7 +1594,7 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
 第三章
 Missing character: There is no ­ (U+00AD) in font LatinModernMath-Regular/OT:sc
 ript=math;language=dflt;!
-[2
+[4
 
 
 
@@ -1594,25 +1604,22 @@ Missing character: There is no ­ (U+00AD) in font LatinModernMath-Regular/OT:sc
 ript=math;language=dflt;!
 Missing character: There is no ­ (U+00AD) in font LatinModernMath-Regular/OT:sc
 ript=math;language=dflt;!
-LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 
-95.
-[3]) [4] [5] (./main.aux (./config/cover.aux) (./chap1/chap.aux)
+[5]) [6] [7] (./main.aux (./config/cover.aux) (./chap1/chap.aux)
 (./chap16/chap.aux) (./extra/extra.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1CEFA9054DD27E64958304C639B582EA;1260.
+(rerunfilecheck)             Checksum: 3A8E9E34D353D81E4DE1D2BA6EB0B02E;1441.
  ) 
 Here is how much of TeX's memory you used:
- 39537 strings out of 474773
- 873764 string characters out of 5752390
- 2241236 words of memory out of 5000000
- 60963 multiletter control sequences out of 15000+600000
+ 39546 strings out of 474773
+ 873899 string characters out of 5752390
+ 2243236 words of memory out of 5000000
+ 60972 multiletter control sequences out of 15000+600000
  570359 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,12n,120p,1263b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (9 pages).
+Output written on main.pdf (11 pages).
