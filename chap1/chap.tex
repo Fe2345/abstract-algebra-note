@@ -31,20 +31,7 @@
 				
 				\ding{180}（乘法分配律）$\forall x,y,z \in F,x\cdot(y+z)=x\cdot y+x\cdot z$
 			\end{defn}
-			我们再定义子域
-			\begin{defn}{子域}{}
-				设$E,F$是两个域，$E \subseteq F$
-				
-				如果$0_F,1_F \in E$，并且$F$中的加法和乘法对$E$形成一个域，
-				
-				那么我们称$E$是$F$的一个子域，并称$F$是$E$的一个域扩张，
-				
-				记作$F\textbackslash E$
-			\end{defn}
-			从以上定义容易看出，$F$也可以视为$E$上的一个线性空间。
-			\begin{defn}{域的$n$次扩张}{}
-				如果$F\textbackslash E$，那么我们记$[F:E]:=dim_E F$，并称$F$是$E$由$[F:E]$次扩张得到的。
-			\end{defn}
+			
 	\section{域的同态}
 		\begin{defn}{域的同态}
 			设$F_1,F_2$是两个域，如果存在一个映射$\varphi:F_1 \rightarrow F_2$，满足：
@@ -89,6 +76,36 @@
 			$\{x \in F | \sigma(x) = x\}$为$F$的不动域
 		\end{defn}
 		“不动域”这一名称是合理的，因为利用域同构的定义容易证明不动域是一个域，而且是$F$的一个子域。
+	\section{域的特征}
+		\begin{defn}{域的特征}{}
+			设$F$是一个域，定义以下映射$N:\N \ni n \mapsto n_F \in F$，满足：
+			
+			$N(0)=0_F,N(n+1)=n_F+1_F$
+			
+			那么，如果$N$是一个单射，我们称$F$的特征为$0$，记作$Char F=0$；
+			
+			否则，我们将满足$N(p)=0_F,p > 0$的最小正整数称为$F$的特征，记作$Char F = p$。
+		\end{defn}
+		我们首先需要证明的是，任何一个域都是具有特征的，因为对于定义中的第二种情形，我们并不知道这样的$p$是否一定存在。
+		\begin{them}{域特征的存在性}{}
+			我们只需要证明第二种情形。
+			
+		
+		\end{them}
+	\section{域的扩张}
+		\begin{defn}{子域}{}
+			设$E,F$是两个域，$E \subseteq F$
+			
+			如果$0_F,1_F \in E$，并且$F$中的加法和乘法对$E$形成一个域，
+			
+			那么我们称$E$是$F$的一个子域，并称$F$是$E$的一个域扩张，
+			
+			记作$F\textbackslash E$
+		\end{defn}
+		从以上定义容易看出，$F$也可以视为$E$上的一个线性空间。
+		\begin{defn}{域的$n$次扩张}{}
+			如果$F\textbackslash E$，那么我们记$[F:E]:=dim_E F$，并称$F$是$E$由$[F:E]$次扩张得到的。
+		\end{defn}
 \ifx\allfiles\undefined
 \end{document}
 \fi

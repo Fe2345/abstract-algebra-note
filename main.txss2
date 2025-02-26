@@ -6,7 +6,7 @@
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "chap1/chap.tex",
+        "CurrentFile": "extra/extra.tex",
         "FileVersion": 1,
         "Files": [
             {
@@ -18,15 +18,23 @@
                 "Line": 0
             },
             {
-                "Col": 0,
+                "Col": 15,
                 "EditorGroup": 0,
                 "FileName": "chap1/chap.tex",
+                "FirstLine": 68,
+                "FoldedLines": "",
+                "Line": 78
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "extra/extra.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 0
             }
         ],
         "MasterFile": "",
-        "VerticalSplit": true
+        "VerticalSplit": false
     }
 }
