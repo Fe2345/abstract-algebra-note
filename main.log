@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  26 FEB 2025 23:23
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  16 MAR 2025 00:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1416,7 +1416,7 @@ llaMath-Regular(0)/b/n on input line 4.
 
 Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (SimSun(0)).
 
-)) (./main.aux (./config/cover.aux) (./chap1/chap.aux) (./chap16/chap.aux)
+)) (./main.aux (./config/cover.aux) (./chap1/chap.aux) (./chap4/chap.aux)
 (./extra/extra.aux))
 \openout1 = `main.aux'.
 
@@ -1570,20 +1570,29 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
 ]
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 
-79.
- [1]
+96.
+ [1] [2]
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 103.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 153.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 107.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 157.
 
-) [2]
-\openout2 = `chap16/chap.aux'.
 
- (./chap16/chap.tex
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 161.
+
+) [3]
+\openout2 = `chap4/chap.aux'.
+
+ (./chap4/chap.tex
 第二章
-) [3
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 13.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 15.
+
+) [4
 
 
 
@@ -1606,42 +1615,41 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 15.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 41.
-
-[4
-
-
-
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 30.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symbb' on input line 46.
+(hyperref)                removing `math shift' on input line 35.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
+(hyperref)                removing `\symbb' on input line 35.
 
-) [5] (./main.aux (./config/cover.aux) (./chap1/chap.aux) (./chap16/chap.aux)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 35.
+
+) [5
+
+
+
+
+] (./main.aux (./config/cover.aux) (./chap1/chap.aux) (./chap4/chap.aux)
 (./extra/extra.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0855EF1A437FE47A7D75C5D9CEE257CB;1236.
+(rerunfilecheck)             Checksum: 76EF87F38A7CD365E936CED7361D0E3A;1134.
  ) 
 Here is how much of TeX's memory you used:
- 39522 strings out of 474773
- 873139 string characters out of 5752390
- 2239236 words of memory out of 5000000
- 60948 multiletter control sequences out of 15000+600000
+ 39521 strings out of 474773
+ 872431 string characters out of 5752390
+ 2238230 words of memory out of 5000000
+ 60947 multiletter control sequences out of 15000+600000
  570359 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,11n,120p,1263b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,12n,120p,1263b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (9 pages).

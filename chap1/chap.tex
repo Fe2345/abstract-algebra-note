@@ -9,7 +9,7 @@
 %标题
 \chapter{域}
 	\section{域的定义}
-		\subsection{域和子域}
+		\subsection{域}
 			\begin{defn}{域}{}
 				设$F$是一个集合，如果存在两个运算$+:F \times F \rightarrow F$和$\cdot :F \times F \rightarrow F$，分别称为加法和乘法，并且满足：
 				
@@ -31,6 +31,42 @@
 				
 				\ding{180}（乘法分配律）$\forall x,y,z \in F,x\cdot(y+z)=x\cdot y+x\cdot z$
 			\end{defn}
+		\subsection{域的性质}
+		\begin{para}{0}
+			\point{}
+				\begin{proposition}
+					加法和乘法的单位元是唯一的。
+				\end{proposition}
+				\begin{proof}
+					假设命题不成立，那么我们不妨假设$0_1,0_2$都是$F$的零元,$0_1 \neq 0_2$
+					
+					那么$0_1=0_1+0_2=0_2$，于是有$0_1 = 0_2$，与假设矛盾。于是加法的单位元唯一。
+					
+					同理可证，乘法的单位元也是唯一的。
+				\end{proof}
+			\point{}
+				\begin{proof}
+					$a\cdot 0 = 0$
+				\end{proof}
+				\begin{proof}
+					$a \cdot 0=a\cdot (0+0)=a\cdot 0+a\cdot 0$
+					
+					$\Rightarrow a\cdot 0+(-a \cdot a)=a\cdot 0 + a\cdot 0+(-a\cdot 0)$
+					
+					$\Rightarrow 0=a \cdot 0$
+				\end{proof}
+			\point{}
+				\begin{proposition}
+					$-a = (-1)\cdot a$
+				\end{proposition}
+				\begin{proof}
+					$a + (-a) = 0 = \left(1+ (-1)\right) \cdot a = 1 \cdot a + (-1)\cdot a=a+(-1)\cdot a$
+					
+					$\Rightarrow (-a)+a+(-a)=(-a)+a+(-1)\cdot a$
+					
+					$\Rightarrow -a = (-1)\cdot a$
+				\end{proof}
+		\end{para}
 			
 	\section{域的同态}
 		\begin{defn}{域的同态}
@@ -82,16 +118,30 @@
 			
 			$N(0)=0_F,N(n+1)=n_F+1_F$
 			
-			那么，如果$N$是一个单射，我们称$F$的特征为$0$，记作$Char F=0$；
+			那么，如果$N$是一个单射，我们称$F$的特征为$0$，记作$\text{Char} F=0$；
 			
-			否则，我们将满足$N(p)=0_F,p > 0$的最小正整数称为$F$的特征，记作$Char F = p$。
+			否则，我们将满足$N(p)=0_F,p > 0$的最小正整数称为$F$的特征，记作$\text{Char} F = p$。
 		\end{defn}
 		我们首先需要证明的是，任何一个域都是具有特征的，因为对于定义中的第二种情形，我们并不知道这样的$p$是否一定存在。
 		\begin{them}{域特征的存在性}{}
+			任何域$F$的特征$\text{Char} F$均存在
+		\end{them}
+		\begin{proof}
 			我们只需要证明第二种情形。
 			
+			容易证明，$N(m+n)=N(m)+N(n)$。
+			
+			于是，因为$N$不是单射，于是一定有$a,b\in \N ,a > b,N(a)=N(b)$
+			
+			于是有$N(a-b)=N(a)-N(b)=0_F$。
+			
+			那么$\{m|N(m)=0_F\}\neq \varnothing$，因此这样的最小整数$\text{Char}F$存在
+		\end{proof}
+		接下来证明几个性质
+		\begin{proposition}
+			
+		\end{proposition}
 		
-		\end{them}
 	\section{域的扩张}
 		\begin{defn}{子域}{}
 			设$E,F$是两个域，$E \subseteq F$
@@ -105,6 +155,12 @@
 		从以上定义容易看出，$F$也可以视为$E$上的一个线性空间。
 		\begin{defn}{域的$n$次扩张}{}
 			如果$F\textbackslash E$，那么我们记$[F:E]:=dim_E F$，并称$F$是$E$由$[F:E]$次扩张得到的。
+		\end{defn}
+	\subsection{代数闭包}
+		\begin{defn}{$E$上的代数闭包}{}
+			设$E \textbackslash F$是一个域扩张，那么我们称
+			
+			$\{\}$
 		\end{defn}
 \ifx\allfiles\undefined
 \end{document}

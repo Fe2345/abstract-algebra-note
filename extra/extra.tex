@@ -17,26 +17,15 @@
 				
 				我们首先讨论的是一个典型的有限域——模$p$剩余类域。
 				
-				首先给出定义。
-				\begin{defn}{$n_F$}{}
-					设$F$是一个域，定义以下映射$N:\N \ni n \mapsto n_F \in F$，满足：
-					
-					$N(0)=0_F,N(n+1)=n_F+1_F$
-					
-					如此定义的$n_F$称为$F$中的$n$
-				\end{defn}
 				\begin{defn}{$F_p$}{}
 					设$F$是一个域，$Char F \geqslant p$且$p$是一个素数，
 					
-					我们定义$F_p = \{0_F,\cdots,p_F\}$
+					我们定义$F_p = N(\Z_p)$
 					
 					并定义其中的加法和乘法为：
 					
-					$a_F +_F b_F := (a_F + b_F) mod p_F$
-					
-					$a_F {\cdot}_F b_F := (a_F \cdot b_F) mod p_F$
+					$+_F = N^-1 \circ + \circ N,{\cdot}_F = N^-1 \circ \cdot \circ N$
 				\end{defn}
-				这里的模运算定义为$a_F mod b_F = (a mod b)_F$。
 				\begin{them}{$F_p$没有真子域}{}
 					设$p$是一个素数，那么域$F_p$不存在真子域，即$F_p \textbackslash E \rightarrow E = F_p$
 				\end{them}
