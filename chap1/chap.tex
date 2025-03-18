@@ -23,7 +23,7 @@
 				
 				\ding{176}（乘法单位元存在）存在一个元素$1_F \in F,1_F \neq 0_F$，称为一元，$\forall x \in F,x\cdot 1_F=1_F \cdot x = x$
 				
-				\ding{177}（乘法逆存在）$\forall x \in F-{0_F},\exists x^-1 \in F,\text{s.t. }x\cdot x^-1=x^-1 \cdot x = 1$，$x^-1$称为$x$的乘法逆元
+				\ding{177}（乘法逆存在）$\forall x \in F-{0_F},\exists x^{-1} \in F,\text{s.t. }x\cdot x^{-1}=x^{-1} \cdot x = 1$，$x^{-1}$称为$x$的乘法逆元
 				
 				\ding{178}（乘法交换律）$\forall x,y \in F,x\cdot y = y\cdot x$
 				
@@ -38,11 +38,24 @@
 					加法和乘法的单位元是唯一的。
 				\end{proposition}
 				\begin{proof}
-					假设命题不成立，那么我们不妨假设$0_1,0_2$都是$F$的零元,$0_1 \neq 0_2$
+					先考虑加法的单位元。假设命题不成立，那么我们不妨假设$0_1,0_2$都是$F$的零元,$0_1 \neq 0_2$
 					
 					那么$0_1=0_1+0_2=0_2$，于是有$0_1 = 0_2$，与假设矛盾。于是加法的单位元唯一。
 					
 					同理可证，乘法的单位元也是唯一的。
+				\end{proof}
+			\point{}
+				\begin{proposition}
+					$\forall a$，加法的逆$-a$是唯一的。
+					
+					如果还有$a \neq 0$，那么乘法的逆$a^{-1}$也是唯一的。
+				\end{proposition}
+				\begin{proof}
+					先考虑加法逆，不妨假设命题不成立，那么$\exists b,c,a+b=0,a+c=0,b \neq c$
+					
+					于是，$b = b+ 0=b+(a+c)=(a+b)+c=0+c=c$，这与假设矛盾。于是加法逆唯一。
+					
+					同理可证，乘法逆也是唯一的。
 				\end{proof}
 			\point{}
 				\begin{proof}
@@ -55,6 +68,13 @@
 					
 					$\Rightarrow 0=a \cdot 0$
 				\end{proof}
+				立即有以下推论：
+				\begin{corollary}{}{}
+					$ab=0 \Rightarrow a = 0 \vee b=0$
+				\end{corollary}
+				\begin{proof}
+					假设$a \neq 0$，那么$b = a^-1 \cdot 0=0$，命题得证
+				\end{proof}
 			\point{}
 				\begin{proposition}
 					$-a = (-1)\cdot a$
@@ -65,6 +85,25 @@
 					$\Rightarrow (-a)+a+(-a)=(-a)+a+(-1)\cdot a$
 					
 					$\Rightarrow -a = (-1)\cdot a$
+				\end{proof}
+				随后我们即可得出以下推论
+				\begin{corollary}{}{}
+					$(-1)\cdot (-x) = x$
+				\end{corollary}
+				\begin{proof}
+					我们只需证明：$(-1)(-1)=1$
+					
+					因为$(-1)(-1)+(-1)\cdot 1 = 0$
+					
+					$\Rightarrow (-1)(-1) + (-1) = 0 \Rightarrow (-1)(-1)=1$
+					
+					那么，$(-1)(-x)=(-1)(-1)\cdot x = 1\cdot x = x$
+				\end{proof}
+				\begin{corollary}{}{}
+					$(-x)(-x)=x \cdot x$
+				\end{corollary}
+				\begin{proof}
+					运用前面的推论中的结果，$(-x)(-x)=x\cdot (-1)(-1)\cdot x = x\cdot 1\cdot x = x\cdot x$
 				\end{proof}
 		\end{para}
 			
@@ -91,9 +130,9 @@
 			
 			那么有：$\varphi (x_1-x_2)=\varphi (x_1)-\varphi (x_2) = 0_{F_2}$
 			
-			因为我们已经假设了$x_1 \neq x_2$，于是$(x_1-x_2)^-1$存在。将上式乘以$\varphi\left((x_1-x_2)^-1\right)$得：
+			因为我们已经假设了$x_1 \neq x_2$，于是$(x_1-x_2)^{-1}$存在。将上式乘以$\varphi\left((x_1-x_2)^{-1}\right)$得：
 			
-			$1_{F_2} = \varphi (1_{F_1}) \varphi\left((x_1-x_2)^-1 (x_1-x_2)\right) = \varphi\left((x_1-x_2)^-1\right)\varphi\left((x_1-x_2)\right)=0_{F_1}$
+			$1_{F_2} = \varphi (1_{F_1}) \varphi\left((x_1-x_2)^{-1} (x_1-x_2)\right) = \varphi\left((x_1-x_2)^{-1}\right)\varphi\left((x_1-x_2)\right)=0_{F_1}$
 			
 			与$0_{F_2} \neq 1_{F_2}$矛盾，于是命题得证。
 		\end{proof}
