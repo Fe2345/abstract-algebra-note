@@ -193,6 +193,28 @@
 
 				于是命题得证。
 			\end{proof}
+			\begin{them}{同态域的特征相等}{}
+				设$\varphi : E \to F$是域$E$到域$F$的同态
+
+				那么有：$\text{Char }E = \text{Char }F$
+			\end{them}
+			\begin{proof}
+				我们不妨假设结论不成立。
+
+				首先我们证明，不可能$\text{Char }E =0, \text{Char }F = p,p$为素数。
+
+				此时，$\varphi \left(N_E(p)\right)=N_F(p)=0_F$，此处$N_E,N_F$分别是$N$在对应$E,F$的情况下的映射
+
+				那么按照同态的定义，一定有$N_E(p)=0_E$，但是这与$\text{Char E}=0$矛盾。
+
+				那么只需要考虑当$\text{Char }E =p, \text{Char }F=q,p,q$为素数,$p \neq q$
+
+				那么，有$\varphi \left(N_E(q)\right)=N_F(q)=0_F$
+
+				那么按照同态的定义，一定有$N_E(q)=0_E$，这说明$p \mid q$，这与$q$是素数矛盾。
+
+				所以假设不成立，命题得证。
+			\end{proof}
 	\section{域的扩张}
 		\begin{defn}{子域}{}
 			设$E,F$是两个域，$E \subseteq F$
