@@ -216,25 +216,45 @@
 				所以假设不成立，命题得证。
 			\end{proof}
 	\section{域的扩张}
-		\begin{defn}{子域}{}
-			设$E,F$是两个域，$E \subseteq F$
-			
-			如果$0_F,1_F \in E$，并且$F$中的加法和乘法对$E$形成一个域，
-			
-			那么我们称$E$是$F$的一个子域，并称$F$是$E$的一个域扩张，
-			
-			记作$F\textbackslash E$
-		\end{defn}
-		从以上定义容易看出，$F$也可以视为$E$上的一个线性空间。
-		\begin{defn}{域的$n$次扩张}{}
-			如果$F\textbackslash E$，那么我们记$[F:E]:=dim_E F$，并称$F$是$E$由$[F:E]$次扩张得到的。
-		\end{defn}
-	\subsection{代数闭包}
-		\begin{defn}{$E$上的代数闭包}{}
-			设$E \textbackslash F$是一个域扩张，那么我们称
-			
-			$\{\}$
-		\end{defn}
+		\subsection{域的扩张的定义}
+			\begin{defn}{子域}{}
+				设$E,F$是两个域，$E \subseteq F$
+				
+				如果$0_F,1_F \in E$，并且$F$中的加法和乘法对$E$形成一个域，
+				
+				那么我们称$E$是$F$的一个子域，并称$F$是$E$的一个域扩张，
+				
+				记作$F\textbackslash E$
+			\end{defn}
+			从以上定义容易看出，$F$也可以视为$E$上的一个线性空间。
+			\begin{defn}{域的扩张次数}{}
+				如果$F\textbackslash E$，那么我们记$[F:E]:=dim_E F$，并称$F$是$E$由$[F:E]$次扩张得到的。
+
+				如果$[F:E]$有限，我们称$F$是$E$的有限扩张，反之称它是无限扩张。
+			\end{defn}
+		
+		\subsection{有限扩张}
+			\begin{defn}{域的生成扩张}{}
+				设$E,F$是两个域，$E\textbackslash F$，集合$S \subseteq E$
+
+				那么我们定义包含$F,S$中全部元素的最小域，即
+
+				$F(S) := \bigcap\limits_{(F \cup S) \subseteq K,E \textbackslash K} K$
+
+				称为在$F$上由$S$生成的$E$的子域
+			\end{defn}
+			\begin{defn}{有限生成与无限生成}{}
+				设$E,F$是两个域，$E\textbackslash F$
+
+				如果存在一个集合$S \subseteq E,F(S) = E$，那么我们称$E$是$F$的有限生成扩张；
+
+				如果对于任意的有限集$S \subseteq E,F(S) \neq E$，那么我们称$E$是$F$的无限生成扩张
+			\end{defn}
+			\begin{defn}{$E$上的代数闭包}{}
+				设$E \textbackslash F$是一个域扩张，那么我们称
+				
+				$\{\}$
+			\end{defn}
 \ifx\allfiles\undefined
 \end{document}
 \fi
