@@ -9,9 +9,9 @@
 \contentsline {section}{\numberline {1.4}域的扩张}{5}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}域的扩张的定义}{5}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}有限扩张}{5}{subsection.1.4.2}%
-\contentsline {chapter}{\numberline {第二章\hspace {.3em}}Galois理论}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Galois群}{6}{section.2.1}%
-\contentsline {chapter}{\numberline {第三章\hspace {.3em}}附录}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}一些典型的域}{7}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}$F_p$}{7}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}$\symbb {Q}$}{8}{subsection.3.1.2}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}Galois理论}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Galois群}{7}{section.2.1}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}附录}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}一些典型的域}{8}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}$F_p$}{8}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}$\symbb {Q}$}{9}{subsection.3.1.2}%
