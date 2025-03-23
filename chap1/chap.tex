@@ -226,6 +226,10 @@
 				
 				记作$F\textbackslash E$
 			\end{defn}
+			如果$E \textbackslash F$，$F \cong G$，那么我们也称：在同构意义下$E \textbackslash G$。
+
+			此后我们所说的子域，默认指的是同构意义下的子域。
+
 			从以上定义容易看出，$F$也可以视为$E$上的一个线性空间。
 			\begin{defn}{域的扩张次数}{}
 				如果$F\textbackslash E$，那么我们记$[F:E]:=dim_E F$，并称$F$是$E$由$[F:E]$次扩张得到的。
@@ -233,6 +237,20 @@
 				如果$[F:E]$有限，我们称$F$是$E$的有限扩张，反之称它是无限扩张。
 			\end{defn}
 			借助域的扩张的概念，我们可以证明一些比较简单的结论
+			\begin{proposition}
+				域$F$如果有$\text{Char }F=0$，那么$\Q$是它的子域；如果有$\text{Char }F=p$，那么$F_p$是它的子域
+			\end{proposition}
+			\begin{proof}
+				如果$\text{Char }F=0$，那么$F$是无限集。因为$0_F,1_F \in F$，那么一定也有$n_F \in F,n \in \N$。
+
+				那么，$-n_F \in F$；进一步地，一定有$a \cdot b^{-1} \in F,a,b \in \{\pm n_F\}$。
+
+				那么，一定有$F \textbackslash \Q$。
+
+				如果$\text{Char }F=p$，$p$是素数。那么，$\{0_F,\cdots,(p-1)_F\}$由映射$N$的性质一定是一个域。
+
+				那么，一定有$F \textbackslash F_p$
+			\end{proof}
 			\begin{them}{域的元素个数仅可能无限或者是$p^k$}{}
 				一个域的元素个数，或者是无限，或者是$p^k$，其中$p$是一个素数，$k$是正整数
 			\end{them}
@@ -261,6 +279,19 @@
 
 				如果对于任意的有限集$S \subseteq E,F(S) \neq E$，那么我们称$E$是$F$的无限生成扩张
 			\end{defn}
+			显然有以下性质
+			\begin{proposition}
+				有限扩张都是有限生成扩张
+			\end{proposition}
+			\begin{proof}
+				设$E \textbackslash F,[E:F]=n < +\infty$。
+
+				那么$E$是$F$上的一个线性空间，我们取它的一组基$\{\alpha_1,\cdots,\alpha_n\}$
+
+				于是$E = \text{span}_F (\alpha_1,\cdots,\alpha_n)$。由线性生成的性质，那么有
+
+				$E = F(\alpha_1,\cdots,\alpha_n)$。于是命题得证。
+			\end{proof}
 			\begin{defn}{$E$上的代数闭包}{}
 				设$E \textbackslash F$是一个域扩张，那么我们称
 				
