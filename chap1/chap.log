@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  23 MAR 2025 23:08
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  24 MAR 2025 22:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1209,24 +1209,59 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 276.
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 287.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 296.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 311.
 
-[7] (./chap.aux)
+[7]
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 317.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 327.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 327.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 327.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 329.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 329.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 332.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 332.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 334.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 336.
+
+[8]
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 375.
+
+[9] (./chap.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `chap.out' has not changed.
-(rerunfilecheck)             Checksum: 2FF58DFD80D6C820CF596893ED50C1FC;1003.
+(rerunfilecheck)             Checksum: 705362BDDA487F5816CA161C4971699C;1200.
  )
-(\end occurred when \ifx on line 300 was incomplete) 
+(\end occurred when \ifx on line 379 was incomplete) 
 Here is how much of TeX's memory you used:
- 39371 strings out of 474773
- 868964 string characters out of 5752390
+ 39506 strings out of 474773
+ 872117 string characters out of 5752390
  2240269 words of memory out of 5000000
- 60845 multiletter control sequences out of 15000+600000
+ 60980 multiletter control sequences out of 15000+600000
  566291 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,7n,120p,1297b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,15n,120p,1297b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on chap.xdv (7 pages, 126784 bytes).
+Output written on chap.xdv (9 pages, 159560 bytes).

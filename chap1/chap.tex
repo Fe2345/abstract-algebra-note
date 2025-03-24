@@ -262,7 +262,7 @@
 				因为$F$是有限域，所以一定有$[F:F_p]=d$有限，那么此时$|F|=p^d$。因为$p$一定为素数，因此命题得证。
 			\end{proof}
 		
-		\subsection{有限扩张}
+		\subsection{有限生成扩张}
 			\begin{defn}{域的生成扩张}{}
 				设$E,F$是两个域，$E\textbackslash F$，集合$S \subseteq E$
 
@@ -292,11 +292,90 @@
 
 				$E = F(\alpha_1,\cdots,\alpha_n)$。于是命题得证。
 			\end{proof}
-			\begin{defn}{$E$上的代数闭包}{}
+			值得注意的是，这个命题如果反过来则不成立，比如说：
+			\begin{example}
+				$\Q(e)$是$\Q$的有限生成扩张，但是不是$\Q$的有限扩张
+			\end{example}
+			\begin{proof}
+				不妨假设命题不成立，那么有$[\Q(e):\Q]=n < +\infty$
+
+				那么，因为线性空间中，数量多于维数的一组向量一定线性相关，那么$1,e,\cdots,e^n$线性相关
+				
+				$\Rightarrow \exists a_0,\cdots,a_n \in \Q,a_0+a_1 e +\cdots+a_n e^n=0$
+
+				但是，这与$e$是超越数矛盾。于是命题得证
+			\end{proof}
+		\subsection{代数扩张}
+			我们首先提出代数元的概念
+			\begin{defn}{代数元}{}
+				设$E \textbackslash F$是一个域扩张，$u \in E$如果满足：
+
+				$\exists p(x) \in F[x],p(u)=0$，那么我们称$u$是$F$上的代数元
+			\end{defn}
+			我们如下定义代数扩张
+			\begin{defn}{代数扩张和超越扩张}{}
+				设$E \textbackslash F$是一个域扩张
+
+				如果$\forall u \in E$，$u$是$F$的代数元，那么我们称$E$是$F$的代数扩张；
+
+				反之，如果$\exists u \in E$，$u$不是$F$的代数元，那么我们称$E$是$F$的超越扩张。
+			\end{defn}
+			接下来我们考虑代数、有限、有限生成三种扩张之间的联系
+			\begin{para}{0}
+				\point{有限扩张的组合和拆分也是有限的}
+					\begin{proposition}
+						设$E,K,F$是三个域，$E \textbackslash K,K\textbackslash F$，并且$E \textbackslash F$是有限扩张。
+
+						那么，$E \textbackslash K,K\textbackslash F$是有限扩张，并且有$[E:F]=[E:K]\cdot [K:F]$
+					\end{proposition}
+					\begin{proof}
+						我们首先证明$E \textbackslash K,K\textbackslash F$是有限扩张。
+
+						显然，$K\textbackslash F$一定是有限扩张，因为$K$是$E$在$F$上的线性子空间，而$[E:F]$有限。
+
+						我们不妨假设$E\textbackslash K$不是有限的，那么一定可以取一组无限基$\{e_\alpha | \alpha  \in A\}$
+
+						考虑$F$上的线性组合$\sum\limits_{i=1}^{\infty} a_i e_{\alpha_i},\alpha_i \in A$
+
+						我们可以断言：这个线性组合在$\exists a_i \neq 0$时不为零，因为$F \subseteq K$，所以这个线性组合也可以视为$K$上的，
+						
+						而线性无关向量组的子向量组也是线性无关的；
+
+						但是，这是不可能的：因为我们知道$[K:F]$有限，一个无限集不可能线性无关。所以$[E:K]$一定有限。
+
+						接下来证明$[E:F]=[E:K]\cdot [K:F]$
+
+						假设$[E:K]=m,[K:F]=n$，取$E$在$K$上的一组基$\{\alpha_1,\cdots,\alpha_m\}$，$K$在$F$上的一组基$\{\beta_1,\cdots,\beta_n\}$
+
+						$\forall \eta \in E,\exists a_1,\cdots,a_m,\eta =a_1 \alpha_1+\cdots+a_m \alpha_m$
+
+						对系数作展开，有：
+
+						$\exists b_{ij},\eta =(b_{11}\beta_1+\cdots+b_{1n}\beta_n) \alpha_1+\cdots+(b_{m1}\beta_1+\cdots+b_{mn}\beta_n) \alpha_m$
+
+						$=\sum\limits_{i=1,j=1}^{i=m,j=n} b_{ij}\alpha_i \beta_j$
+
+						$=\sum\limits_{i=1}^{m}\left(\sum\limits_{j=1}^{n}b_{ij} \beta_j\right) \alpha_i$
+
+						令$\eta =0$，因为$\{\alpha_1,\cdots,\alpha_m\}$线性无关，一定有$\sum\limits_{j=1}^{n}b_{ij} \beta_j=0$
+
+						但是，$\{\beta_1,\cdots,\beta_n\}$线性无关，所以一定有$b_{ij}=0$。所以$\{\alpha_i \beta_j\}$是$E$在$F$上的一组基
+
+						所以$[E:F]=mn=[E:K]\cdot [K:F]$
+					\end{proof}
+			\end{para}
+			
+		\begin{tikzcd}
+			\text{Infinite extension} \arrow[rr, "is", shift left] \arrow[dd, "is", shift left] &  & \text{Algebratic extension} \arrow[ll, "if infinite-generate", shift left] \\
+																				 &  &                                       \\
+			\text{Infinite-generate extension} \arrow[uu, "if Algebratic", shift left]                            &  &                                      
+		\end{tikzcd}
+	\section{代数闭包}
+		\begin{defn}{$E$上的代数闭包}{}
 				设$E \textbackslash F$是一个域扩张，那么我们称
 				
 				$\{\}$
-			\end{defn}
+		\end{defn}
 \ifx\allfiles\undefined
 \end{document}
 \fi
