@@ -230,12 +230,6 @@
 
 			此后我们所说的子域，默认指的是同构意义下的子域。
 
-			从以上定义容易看出，$F$也可以视为$E$上的一个线性空间。
-			\begin{defn}{域的扩张次数}{}
-				如果$F\textbackslash E$，那么我们记$[F:E]:=dim_E F$，并称$F$是$E$由$[F:E]$次扩张得到的。
-
-				如果$[F:E]$有限，我们称$F$是$E$的有限扩张，反之称它是无限扩张。
-			\end{defn}
 			借助域的扩张的概念，我们可以证明一些比较简单的结论
 			\begin{proposition}
 				域$F$如果有$\text{Char }F=0$，那么$\Q$是它的子域；如果有$\text{Char }F=p$，那么$F_p$是它的子域
@@ -251,6 +245,14 @@
 
 				那么，一定有$F \textbackslash F_p$
 			\end{proof}
+		\subsection{有限扩张}
+			从域的定义容易看出，$F$也可以视为$E$上的一个线性空间。
+			\begin{defn}{域的扩张次数}{}
+				如果$F\textbackslash E$，那么我们记$[F:E]:=dim_E F$，并称$F$是$E$由$[F:E]$次扩张得到的。
+
+				如果$[F:E]$有限，我们称$F$是$E$的有限扩张，反之称它是无限扩张。
+			\end{defn}
+			有限扩张的概念可以让我们立即得出以下结论
 			\begin{them}{域的元素个数仅可能无限或者是$p^k$}{}
 				一个域的元素个数，或者是无限，或者是$p^k$，其中$p$是一个素数，$k$是正整数
 			\end{them}
@@ -261,7 +263,6 @@
 
 				因为$F$是有限域，所以一定有$[F:F_p]=d$有限，那么此时$|F|=p^d$。因为$p$一定为素数，因此命题得证。
 			\end{proof}
-		
 		\subsection{有限生成扩张}
 			\begin{defn}{域的生成扩张}{}
 				设$E,F$是两个域，$E\textbackslash F$，集合$S \subseteq E$
@@ -322,6 +323,23 @@
 			\end{defn}
 			接下来我们考虑代数、有限、有限生成三种扩张之间的联系
 			\begin{para}{0}
+				\point{有限扩张都是代数扩张}
+					\begin{them}{有限扩张都是代数扩张}{}
+						任何有限扩张都是代数扩张
+					\end{them}
+					\begin{proof}
+						设$E,F$是两个域，$[E:F]=n < +\infty$
+
+						取$\forall \alpha \in E$，考虑集合$\{1,\alpha ,\cdots,\alpha^n\}$
+
+						因为这个集合有$n+1 > [E:F]$个元素，因此它一定线性相关；这代表着
+
+						$\exists a_0,\cdots,a_n$不全为$0,a_0 + a_1\alpha + \cdots a_n \alpha ^n=0$
+
+						因此$\alpha $是多项式$\sum\limits_{k=0}^{n} a_k x^k \in F[x]$的一个根
+
+						所以$\alpha $是$F$的代数元，于是命题得证。
+					\end{proof}
 				\point{有限扩张的组合和拆分也是有限的}
 					\begin{proposition}
 						设$E,K,F$是三个域，$E \textbackslash K,K\textbackslash F$，并且$E \textbackslash F$是有限扩张。
@@ -361,7 +379,45 @@
 
 						但是，$\{\beta_1,\cdots,\beta_n\}$线性无关，所以一定有$b_{ij}=0$。所以$\{\alpha_i \beta_j\}$是$E$在$F$上的一组基
 
-						所以$[E:F]=mn=[E:K]\cdot [K:F]$
+						所以$[E:F]=mn=[E:K]\cdot [K:F]$，命题得证
+					\end{proof}
+					利用这个命题可以得出以下推论
+					\begin{corollary}{素数次扩张不存在平凡子域}{}
+						若$E \textbackslash F$是一个有限扩张，$[E:F]=p$为素数
+
+						那么$E,F$没有非平凡的中间域，即$E\textbackslash K\textbackslash F \Leftrightarrow E=K \vee  F=K$
+					\end{corollary}
+					\begin{proof}
+						这是显然的，因为素数的因子仅有$1$和自身；而$[K:F]=1$当且仅当$K,F$在同构意义下相等。
+					\end{proof}
+					\begin{corollary}{单代数扩张一定是有限扩张}{}
+						设$E,F$是两个域，$E=F(u),u$是$F$的代数元
+						
+						那么$E=F(u)$是一个有限扩张，并且$[E:F]=\text{deg }f(x)$，其中$f(x)$是$u$的极小多项
+					\end{corollary}
+					\begin{proof}
+						取$u$的极小多项式$f(x) \in F[x]$，设$f(x)=\sum\limits_{k=0}^{n} a_k x^k,a_n =1$
+
+						因为$f(u)=0$，所以有$x^n = -\sum\limits_{i=0}^{n-1} a_k x^k$
+
+						于是，任意的$\alpha ^k$均可以由$1,\alpha,\cdot,\alpha^{n-1}$线性表出，这表示
+
+						$E = F(u)=\{a_0 +\cdots+a_{n-1} u^{n-1}\}$
+
+						于是$E$中任意一个元素可由$\{1,\cdots,u^{n-1}\}$线性表出。但是$u$的极小多项式的次数为$n$，所以这个集合一定线性无关，也就是它是$E$的基
+
+						所以$[E:F]=n < +\infty$
+					\end{proof}
+				\point{有限生成的代数扩张是有限扩张}
+					\begin{them}{有限生成的代数扩张是有限扩张}{}
+						$E \textbackslash F$是有限扩张$\Leftrightarrow E=F(u_1,\cdots,u_n)$其中$u_1,\cdots,u_n$是$F$的代数元
+					\end{them}
+					\begin{proof}
+						首先证明充分性。
+						
+						取$E$在$F$上的一组基$\{u_1,\cdots,u_n\}$
+
+						
 					\end{proof}
 			\end{para}
 			
