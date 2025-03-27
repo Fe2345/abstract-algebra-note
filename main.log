@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  24 MAR 2025 22:33
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  27 MAR 2025 22:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1215,69 +1215,137 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 229.
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 229.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 235.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 242.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 248.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 246.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 252.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 260.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 251.
 
 [5]
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 267.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 262.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 271.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 268.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 276.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 272.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 287.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 277.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 311.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 288.
 
 [6]
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 317.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 327.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 318.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 327.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 345.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 327.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 345.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 329.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 329.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 332.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 332.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 334.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 336.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 345.
 
 [7]
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 375.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 347.
 
-) [8]
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 350.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 350.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 352.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 354.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 386.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 388.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 388.
+
+[8]
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 434.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 434.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 436.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 436.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 436.
+
+[9]
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 453.
+
+
+Overfull \hbox (30.20697pt too wide) in paragraph at lines 456--462
+\TU/SimSun(0)/m/n/12 三 种 扩 张 的 关 系 可 以 用 以 下 图 示 概 括 [] 
+ []
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 464.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 469.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 474.
+
+[10]
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 484.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 484.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 484.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 487.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 487.
+
+
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 487.
+
+) [11]
 \openout2 = `chap4/chap.aux'.
 
  (./chap4/chap.tex
@@ -1288,7 +1356,7 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 13.
 
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 15.
 
-) [9
+) [12
 
 
 
@@ -1328,26 +1396,26 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 45.
 
-[10
+[13
 
 
 
 
-]) [11] (./main.aux (./config/cover.aux) (./chap1/chap.aux) (./chap4/chap.aux) (./extra/extra.aux))
+]) [14] (./main.aux (./config/cover.aux) (./chap1/chap.aux) (./chap4/chap.aux) (./extra/extra.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B41CBCE0BF39BFF31524D3E2C4E584B0;1685.
+(rerunfilecheck)             Checksum: 8177BF24187413DF9D7163CC66FBCFB2;1779.
  ) 
 Here is how much of TeX's memory you used:
- 39707 strings out of 474773
- 878072 string characters out of 5752390
- 2240236 words of memory out of 5000000
- 61128 multiletter control sequences out of 15000+600000
- 570375 words of font info for 134 fonts, out of 8000000 for 9000
+ 39743 strings out of 474773
+ 879653 string characters out of 5752390
+ 2245236 words of memory out of 5000000
+ 61162 multiletter control sequences out of 15000+600000
+ 570391 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,15n,120p,1288b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,16n,120p,1288b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (15 pages, 211468 bytes).
+Output written on main.xdv (18 pages, 266348 bytes).

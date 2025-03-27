@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  27 MAR 2025 22:16
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  27 MAR 2025 23:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/文件/学习/各个课程学习笔记收录/抽象代数/chap1/chap.tex
-(d:/文件/学习/各个课程学习笔记收录/抽象代数/chap1/chap.tex
+**d:/文件/学习/各个课程学习笔记收录/抽象代数/chap2/chap.tex
+(d:/文件/学习/各个课程学习笔记收录/抽象代数/chap2/chap.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/ctex/ctexbook.cls (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -1139,197 +1139,52 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 第一章
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 14.
+(Font)              scaled to size 12.00128pt on input line 13.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 8.40088pt on input line 14.
+(Font)              scaled to size 8.40088pt on input line 13.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 14.
+(Font)              scaled to size 6.00064pt on input line 13.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 14.
+(Font)              scaled to size 11.99872pt on input line 13.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 14.
+(Font)              scaled to size 8.3991pt on input line 13.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 14.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+(Font)              scaled to size 5.99936pt on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
 (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
  (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13.
  (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 14.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 13.
  (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 ) [1
 
 
-]
-LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 96.
- [2] [3] [4]
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 227.
-
-[5]
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 229.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 229.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 242.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 246.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 251.
-
-[6]
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 262.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 268.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 272.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 277.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 288.
-
-[7]
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 312.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 318.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 345.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 345.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 345.
-
-[8]
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 347.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 347.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 350.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 350.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 352.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 354.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 386.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 388.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 388.
-
-[9]
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 413.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 434.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 434.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 436.
-
-[10]
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 441.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 445.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 453.
-
-
-Overfull \hbox (30.20697pt too wide) in paragraph at lines 456--462
-\TU/SimSun(0)/m/n/12 三 种 扩 张 的 关 系 可 以 用 以 下 图 示 概 括 [] 
- []
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 464.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 469.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 474.
-
-[11]
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 484.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 484.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 484.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 487.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 487.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 487.
-
-[12] (./chap.aux)
+] (./chap.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `chap.out' has not changed.
-(rerunfilecheck)             Checksum: DFA6A94129A03494788243FF0CC25293;1294.
+(rerunfilecheck)             Checksum: 0CA6D9AE83187BEF36188092F608B639;153.
  )
-(\end occurred when \ifx on line 506 was incomplete) 
+(\end occurred when \ifx on line 19 was incomplete) 
 Here is how much of TeX's memory you used:
- 39541 strings out of 474773
- 873690 string characters out of 5752390
- 2244269 words of memory out of 5000000
- 61013 multiletter control sequences out of 15000+600000
- 566307 words of font info for 108 fonts, out of 8000000 for 9000
+ 39208 strings out of 474773
+ 861953 string characters out of 5752390
+ 2226269 words of memory out of 5000000
+ 60698 multiletter control sequences out of 15000+600000
+ 566211 words of font info for 96 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,16n,120p,1297b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,5n,120p,1297b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on chap.xdv (12 pages, 214020 bytes).
+Output written on chap.xdv (1 page, 17364 bytes).

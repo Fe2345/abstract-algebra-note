@@ -436,21 +436,73 @@
 						如果$E\textbackslash K,K\textbackslash F$都是代数扩张，那么$E\textbackslash F$也是代数扩张
 					\end{them}
 					\begin{proof}
+						取$\forall \alpha \in E$
 						
+						因为$E\textbackslash K$是代数扩张，所以$\exists f(x) \in K[x],f(\alpha)=0$
+
+						设$f(x)=a_0 + \cdots + a_n x^n$，取$R=F(a_0,\cdots,a_n)$
+
+						因为$a_0,\cdots,a_n \in K$，而$K \textbackslash F$是代数扩张，所以$a_0,\cdots,a_n$是$F$的代数元
+
+						那么，按照前面的定理，一定有$[R:F] < +\infty$
+
+						接下来考虑$R(\alpha)$，因为$a_0,\cdots,a_n \in R$，所以$\alpha$是$R$的代数元，那么就有$[R(\alpha):R]< \infty$
+
+						所以$[R(\alpha):F]=[R(\alpha):R]\cdot [R:F]<+\infty$
+
+						但是，$R \textbackslash F$，所以一定也有$[F(\alpha):F] < +\infty$，又因为有限扩张都是代数扩张，所以$\alpha$是$F$的代数元，于是命题得证。
 					\end{proof}
 			\end{para}
-			
+		三种扩张的关系可以用以下图示概括
 		\begin{tikzcd}
 			\text{Infinite extension} \arrow[rr, "is", shift left] \arrow[dd, "is", shift left] &  & \text{Algebratic extension} \arrow[ll, "if infinite-generate", shift left] \\
 																				 &  &                                       \\
 			\text{Infinite-generate extension} \arrow[uu, "if Algebratic", shift left]                            &  &                                      
 		\end{tikzcd}
 	\section{代数闭包}
-		\begin{defn}{$E$上的代数闭包}{}
+		\begin{defn}{相对代数闭包}{}
 				设$E \textbackslash F$是一个域扩张，那么我们称
 				
-				$\{\}$
+				$K  = \{\alpha \in E | \alpha \text{是}F\text{上的代数元}\}$是$F$在$E$上的相对代数闭包
 		\end{defn}
+		\begin{defn}{代数闭域}{}
+			如果域$K$没有真代数扩张，即$K$的任意一个代数扩张$K^{\prime} \textbackslash K$都有$K^{\prime}=K$
+
+			那么我们称$K$是一个代数闭域
+		\end{defn}
+		\begin{defn}{绝对代数闭包}{}
+			如果$\overline{F} \textbackslash F$是一个代数扩张，且$\overline{F}$是一个代数闭域
+			
+			那么我们称$\overline{F}$是$F$的绝对代数闭包，记作$\overline{F}$
+		\end{defn}
+
+		我们早就发现，似乎代数扩张并不能无限的扩张，而是会有一个终点，这个终点其实就是代数闭包，以下命题指出了这个事实。
+
+		\begin{proposition}
+			如果$K$是$F$在$E$上的代数闭包，
+			
+			那么如果$E \textbackslash K^{\prime} \textbackslash K$且$K^{\prime} \textbackslash K$是代数扩张，那么$K^{\prime}=K$
+		\end{proposition}
+		\begin{proof}
+			因为$K \textbackslash F,K^{\prime} \textbackslash K$都是代数扩张，所以$K^{\prime} \textbackslash F$也是代数扩张
+
+			因为代数闭包即是全部可以通过代数扩张得到的元素的集合，所以必定有$K^{\prime} = K$
+		\end{proof}
+		显然绝对代数闭包的定义和以下等价
+		\begin{proposition}
+			如果$K$是$F$在$E$上的相对代数闭包，且$E$是一个代数闭域，那么$K$是$F$的绝对代数闭包
+		\end{proposition}
+		\begin{proof}
+			只需证明$K$是一个代数闭域
+
+			没法证，得用商环…………
+		\end{proof}
+		\begin{them}{绝对代数闭包的存在性}{}
+			任意一个域$F$的绝对代数闭包$\overline{F}$都存在，并且在同构意义下唯一
+		\end{them}
+		\begin{proof}
+			要用Zorn引理……
+		\end{proof}
 \ifx\allfiles\undefined
 \end{document}
 \fi
