@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  27 MAR 2025 23:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  28 MAR 2025 22:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1177,14 +1177,14 @@ L3 programming layer <2022/08/05>
 Package rerunfilecheck Info: File `chap.out' has not changed.
 (rerunfilecheck)             Checksum: 0CA6D9AE83187BEF36188092F608B639;153.
  )
-(\end occurred when \ifx on line 19 was incomplete) 
+(\end occurred when \ifx on line 27 was incomplete) 
 Here is how much of TeX's memory you used:
  39208 strings out of 474773
  861953 string characters out of 5752390
- 2226269 words of memory out of 5000000
+ 2230269 words of memory out of 5000000
  60698 multiletter control sequences out of 15000+600000
  566211 words of font info for 96 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,5n,120p,1297b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on chap.xdv (1 page, 17364 bytes).
+Output written on chap.xdv (1 page, 19424 bytes).
