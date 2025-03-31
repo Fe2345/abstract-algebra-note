@@ -9,43 +9,189 @@
 %标题
 \chapter{环、模}
 	\section{环的定义}
-		\begin{defn}{}
-			设$R$是一个集合，如果存在两个运算$+ : R \times R \rightarrow R$和$\cdot : R \times R \rightarrow R$
+		\subsection{环的定义}
+			\begin{defn}{}
+				设$R$是一个集合，如果存在两个运算$+ : R \times R \rightarrow R$和$\cdot : R \times R \rightarrow R$
 
-			分别称为加法和乘法，满足下列条件：
+				分别称为加法和乘法，满足下列条件：
 
-			\ding{172} （加法单位元存在）存在一个元素$0_R \in R$，称为加法单位元，使得对于任意$x \in R$，有$x + 0_R = 0_R + x = x$。
+				\ding{172} （加法单位元存在）存在一个元素$0_R \in R$，称为加法单位元，使得对于任意$x \in R$，有$x + 0_R = 0_R + x = x$。
 
-			\ding{173} （加法交换律）$\forall x, y \in R,x + y = y + x$
+				\ding{173} （加法交换律）$\forall x, y \in R,x + y = y + x$
 
-			\ding{174} （加法结合律）$\forall x, y, z \in R,(x + y) + z = x + (y + z)$
+				\ding{174} （加法结合律）$\forall x, y, z \in R,(x + y) + z = x + (y + z)$
 
-			\ding{175} （加法逆存在）$\forall x \in R,\exists -x \in R$，称为加法逆，使得$x + (-x) = 0_R$
+				\ding{175} （加法逆存在）$\forall x \in R,\exists -x \in R$，称为加法逆，使得$x + (-x) = 0_R$
 
-			\ding{176} （乘法结合律）$\forall x, y, z \in R,(x \cdot y) \cdot z = x \cdot (y \cdot z)$
+				\ding{176} （乘法结合律）$\forall x, y, z \in R,(x \cdot y) \cdot z = x \cdot (y \cdot z)$
 
-			\ding{177} （左分配律）$\forall x, y, z \in R,x \cdot (y + z) = x \cdot y + x \cdot z$
-						
-						（右分配律）$\forall x, y, z \in R,(y + z) \cdot x = y \cdot x + z \cdot x$
+				\ding{177} （左分配律）$\forall x, y, z \in R,x \cdot (y + z) = x \cdot y + x \cdot z$
+							
+							（右分配律）$\forall x, y, z \in R,(y + z) \cdot x = y \cdot x + z \cdot x$
 
-			那么我们称$(R,+,\cdot)$是一个环，简称为环$R$。
+				那么我们称$(R,+,\cdot)$是一个环，简称为环$R$。
+			\end{defn}
+			相比域的定义，环的定义仅涉及6条性质，去除了单位元存在、可交换、可逆三条性质。
+
+			在研究环时，我们有时也会考虑存在单位元和可交换的环，因此有以下定义：
+			\begin{defn}{交换环、幺环}{}
+				如果环$R$满足：$\forall x,y \in R,x \cdot y = y \cdot x$，那么我们称$R$是一个交换环；
+
+				如果环$R$满足：$\exists 1_R \in R,\forall x \in R,1_R \cdot x = x \cdot 1_R = x$，称为乘法单位元，
+			\end{defn}
+		\subsection{环的性质}
+		\subsection{子环}
+			我们也类似地提出后续我们会提及的子环的概念。
+			\begin{defn}{子环}{}
+				设$R$是一个环，集合$S \subseteq R$，
+				
+				如果$S$对$R$上的加法和乘法也构成一个环，那么我们称$S$是$R$的子环。
+			\end{defn}
+	\section{环的同态}
+		我们类似于域的同态，定义出环的同态。
+		\subsection{定义}
+			\begin{defn}{环同态}{}
+				设$R,S$是两个环，如果映射$\varphi : R \rightarrow S$满足：
+
+				$\forall a,b \in R,\varphi (a+b)=\varphi (a)+\varphi (b),\varphi (ab)=\varphi (a)\varphi (b)$
+
+				并且如果$R,S$均是幺环，$\varphi (1_R)=1_S$
+				
+				那么我们称$\varphi $是一个$R$到$S$的环同态。
+			\end{defn}
+			\begin{defn}{单同态、满同态、同构}{}
+				假设有环同态$\psi :R \rightarrow S$
+
+				如果$\psi $是单射，那么称它是一个单同态；
+
+				如果$\psi $是满射，那么称它是一个满同态；
+
+				如果$\psi $是双射，称它是一个同构；
+			\end{defn}
+			同构是最严格的同态，表示两个环在结构上是完全相同的，有以下显而易见的事实：
+			\begin{proposition}
+				如果$\psi : R \rightarrow S$是一个环同构，那么$\psi^{-1} : S \rightarrow R$也是一个环同构
+			\end{proposition}
+			\begin{proof}
+				$\psi \left(\psi^{-1} (a)+\psi^{-1} (b)\right)=\psi \left(\psi (a)\right)+\psi \left(\psi (b)\right)=a+b$
+
+				因为$\psi $是双射，所以有$\psi^{-1} (a)+\psi^{-1} (b)=\psi (a+b)$
+
+				同理，$\psi \left(\psi^{-1} (a)\psi^{-1} (b)\right)=\psi \left(\psi (a)\right)\psi \left(\psi (b)\right)=ab$
+
+				$\Rightarrow \psi^{-1} (a)\psi^{-1} (b)=\psi (ab)$，于是命题得证
+			\end{proof}
+		\subsection{同态的核、像}
+			\begin{defn}{环同态的核、像}{}
+				设$\psi : R \rightarrow S$是一个环同态，我们定义：
+
+				$\ker \psi = \{a \in R | \psi (a) = 0_S\}$，称为$\psi $的核
+
+				$\text{Im } \psi = \{\psi (a) | a \in R\}$，称为$\psi $的像
+			\end{defn}
+			与域的同态不同，环的同态的核并不是平凡的，因为域同态未必是单射。因此，我们需要研究环同态的核与像。
+
+			但是，受限于目前的知识，我们暂时无法证明核与像的一些进阶性质，我们仅仅证明一些简单的性质。
+			\begin{proposition}
+				设$\psi :R \rightarrow S$是一个环同态，那么$\ker \psi $是一个$R$的子环
+			\end{proposition}
+			\begin{proof}
+				
+			\end{proof}
+	\section{环的理想}
+		\begin{defn}{理想}{}
+			设$R$是一个环，$R$的子环$R$如果满足：
+
+			$\forall a \in R,b \in S,ab \in S$，那么我们称$S$是$R$的一个理想
 		\end{defn}
-		相比域的定义，环的定义仅涉及6条性质，去除了单位元存在、可交换、可逆三条性质。
+		我们观察到：一些环，比如说$\Z$，他们有一种特殊的理想，比如说$\forall m \in \Z,m\Z$是$\Z$的一个理想。我们把这种直接由一个元素“生成”的理想叫主理想。
+		\begin{defn}{主理想}{}
+			设$R$是一个环，如果$R$的一个理想$S$满足：
 
-		在研究环时，我们有时也会考虑存在单位元和可交换的环，因此有以下定义：
-		\begin{defn}{交换环、幺环}{}
-			如果环$R$满足：$\forall x,y \in R,x \cdot y = y \cdot x$，那么我们称$R$是一个交换环；
-
-			如果环$R$满足：$\exists 1_R \in R,\forall x \in R,1_R \cdot x = x \cdot 1_R = x$，称为乘法单位元，
+			$\exists a \in R,S=aR := \{ab | b \in R\}$，那么我们称$S$是由$a$生成的主理想，记作$(a)$
 		\end{defn}
 	\section{模}
-		\begin{defn}
-			设$R$是一个环，$M$是一个集合，如果存在两个运算$+ : M \times M \rightarrow M,\cdot : R \times M \rightarrow M$
-			
-			分别称为称为加法和纯量乘法，满足下列条件：
+		本节我们研究一种“环上的线性空间”，也就是模
+		\subsection{模的定义}
+			\begin{defn}{左模}{}
+				设$R$是一个环，$M$是一个集合，如果存在两个运算$+ : M \times M \rightarrow M,\cdot_R : R \times M \rightarrow M$
+				
+				分别称为称为加法和纯量乘法，满足下列条件：
 
-			\ding{172} 
-		\end{defn}
+				\ding{172} $\exists 0_M \in M$，称为加法单位元，$\forall \alpha \in M,0_M + \alpha =\alpha +0_M=\alpha $
+
+				\ding{173} $\forall \alpha,\beta  \in M,\alpha +\beta =\beta +\alpha $
+
+				\ding{174} $\forall \alpha,\beta,\gamma  \in M,(\alpha +\beta )+\gamma =\alpha +(\beta +\gamma )$
+
+				\ding{175} $\forall \alpha \in M,\exists -\alpha \in M$，称为加法逆，使得$\alpha +(-\alpha )=0_M$
+
+				\ding{176} $\forall a,b \in R,\alpha \in M,a(b\alpha )=(ab)\alpha$
+
+				\ding{177} $\forall a \in R,\alpha ,\beta \in M,a(\alpha +\beta )=a\alpha +a\beta $
+
+				\ding{178} $\forall a,b \in R,\alpha \in M,(a+b)\alpha =a\alpha +b\alpha $
+
+				那么我们称$M$是一个左$R-$模
+			\end{defn}
+			类似地，我们也有右模的定义：
+			\begin{defn}{右模}{}
+				设$R$是一个环，$M$是一个集合，如果存在两个运算$+ : M \times M \rightarrow M,\cdot_R : M \times R \rightarrow M$
+				
+				分别称为称为加法和纯量乘法，满足下列条件：
+
+				\ding{172} $\exists 0_M \in M$，称为加法单位元，$\forall \alpha \in M,0_M + \alpha =\alpha +0_M=\alpha $
+
+				\ding{173} $\forall \alpha,\beta  \in M,\alpha +\beta =\beta +\alpha $
+
+				\ding{174} $\forall \alpha,\beta,\gamma  \in M,(\alpha +\beta )+\gamma =\alpha +(\beta +\gamma )$
+
+				\ding{175} $\forall \alpha \in M,\exists -\alpha \in M$，称为加法逆，使得$\alpha +(-\alpha )=0_M$
+
+				\ding{176} $\forall a,b \in R,\alpha \in M,(\alpha a)b=\alpha (ab)$
+
+				\ding{177} $\forall a \in R,\alpha ,\beta \in M,(\alpha +\beta )a=\alpha a+\beta b$
+
+				\ding{178} $\forall a,b \in R,\alpha \in M,\alpha (a+b)=\alpha a+\alpha b$
+
+				那么我们称$M$是一个右$R-$模
+			\end{defn}
+			如果$M$兼具左模和右模的特征，我们称$M$是一个双模：
+			\begin{defn}{双模}{}
+				如果$M$既是左$R-$模，又是右$S-$模，并且满足：
+
+				$(a \alpha )b=a(\alpha b)$
+
+				那么我们称$M$是一个$(R,S)-$双模
+			\end{defn}
+			我们也知道，环不一定有乘法单位元，因此有以下定义：
+			\begin{defn}{幺模}{}
+				设$R$是幺环，$M$是一个$R-$模
+
+				如果$\forall \alpha \in M,1_R \cdot \alpha =\alpha $，那么我们称$M$是一个幺模。
+			\end{defn}
+			我们之所以刻意区分左右模，并且还提出双模的概念，是因为环不一定交换，因此$a\alpha $和$\alpha a$并不等价。
+
+			以下命题指出了一个事实：只有在环是交换幺环时，左右幺模才在交换乘法次序的关系下等价。
+			\begin{proposition}
+				设$R$是一个交换环，$M$既是左$R-$模，又是右$R-$模，那么
+
+				$E = \{(a\alpha ,\alpha a)| a \in R,\alpha \in M\} \subseteq M \times M$是一个等价关系
+			\end{proposition}
+			\begin{proof}
+				
+			\end{proof}
+			在后续中，除非特别做区分，我们都假定我们说的模指的是左模。
+		\subsection{模的同态}
+			\begin{defn}{模同态}{}
+				设$M,N$是两个$R-$模，如果映射$\psi  : M \rightarrow N$满足：
+
+				$\forall \alpha ,\beta  \in M,\psi (\alpha +\beta )=\psi (\alpha )+\psi (\beta )$
+
+				$\forall a \in R,\alpha  \in M,\psi (a\alpha )=a\psi (\alpha )$
+
+				那么称$\psi $是一个从$M$到$N$的模同态。
+			\end{defn}
 \ifx\allfiles\undefined
 \end{document}
 \fi

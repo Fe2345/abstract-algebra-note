@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  29 MAR 2025 18:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  31 MAR 2025 22:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1139,52 +1139,55 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 第一章
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 13.
+(Font)              scaled to size 12.00128pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 8.40088pt on input line 13.
+(Font)              scaled to size 8.40088pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 13.
+(Font)              scaled to size 6.00064pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 13.
+(Font)              scaled to size 11.99872pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 13.
+(Font)              scaled to size 8.3991pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 13.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+(Font)              scaled to size 5.99936pt on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
 (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
  (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14.
  (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 13.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 14.
  (d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 ) [1
 
 
-] (./chap.aux)
+]
+LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 84.
+ [2] [3] [4] [5] (./chap.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `chap.out' has not changed.
-(rerunfilecheck)             Checksum: 0CA6D9AE83187BEF36188092F608B639;153.
+(rerunfilecheck)             Checksum: BED6250EA2428813CCFABD1C0D409673;1025.
  )
-(\end occurred when \ifx on line 38 was incomplete) 
+(\end occurred when \ifx on line 195 was incomplete) 
 Here is how much of TeX's memory you used:
- 39234 strings out of 474773
- 863455 string characters out of 5752390
- 2239269 words of memory out of 5000000
- 60724 multiletter control sequences out of 15000+600000
- 566211 words of font info for 96 fonts, out of 8000000 for 9000
+ 39358 strings out of 474773
+ 869138 string characters out of 5752390
+ 2244269 words of memory out of 5000000
+ 60836 multiletter control sequences out of 15000+600000
+ 566275 words of font info for 104 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,5n,120p,1297b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,6n,120p,1297b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on chap.xdv (1 page, 25560 bytes).
+Output written on chap.xdv (5 pages, 92560 bytes).
