@@ -40,6 +40,25 @@
 				如果环$R$满足：$\exists 1_R \in R,\forall x \in R,1_R \cdot x = x \cdot 1_R = x$，称为乘法单位元，
 			\end{defn}
 		\subsection{环的性质}
+		\subsection{整环}
+			\begin{defn}{零因子}{}
+				设$R$是一个环，如果$\exists x,y \in R,x,y \neq 0_R$，使得$x \cdot y = 0_R$，那么我们称$x,y$是$R$的零因子。
+			\end{defn}
+			\begin{defn}{整环}{}
+				如果环$R$是一个交换幺环，并且不包含零因子，那么我们称$R$是一个整环。
+			\end{defn}
+			\begin{them}{循环的整环必有素零因子}{}
+				设$R$是一个整环，
+				
+				我们定义：$N : \Z \ni n \mapsto n_F \in R$，满足$(n+1)_F = n_F+1_F$
+
+				如果$\exists a \in R,a \neq 0,\exists n \in \N,n_F a = 0_R$
+
+				那么存在素数$p$，$\forall b \in R,p_R b=0_R$
+			\end{them}
+			\begin{proof}
+				
+			\end{proof}
 		\subsection{子环}
 			我们也类似地提出后续我们会提及的子环的概念。
 			\begin{defn}{子环}{}
@@ -59,6 +78,17 @@
 				
 				那么我们称$\varphi $是一个$R$到$S$的环同态。
 			\end{defn}
+			显然，同态一定将零元映射到零元
+			\begin{proposition}
+				设$\varphi : R \rightarrow S$是一个环同态，那么$\varphi (0_R) = 0_S$
+			\end{proposition}
+			\begin{proof}
+				$\varphi (0_R) = \varphi (0_R + 0_R) = \varphi (0_R) + \varphi (0_R)$
+
+				$\Rightarrow -\varphi (0_R)+\varphi (0_R) = -\varphi (0_R)+\varphi (0_R)+\varphi (0_R)$
+
+				$\Rightarrow \varphi (0_R)=0_S$
+			\end{proof}
 			\begin{defn}{单同态、满同态、同构}{}
 				假设有环同态$\psi :R \rightarrow S$
 
@@ -96,7 +126,13 @@
 				设$\psi :R \rightarrow S$是一个环同态，那么$\ker \psi $是一个$R$的子环
 			\end{proposition}
 			\begin{proof}
-				
+				取$\forall a,b \in \ker \psi$，那么有$\psi (a)=\psi (b)=0$
+
+				我们注意到：$\psi (0_R) = 0_S \Rightarrow 0_R \in \ker \psi ,a +0_R=a$
+
+				$\psi \left(a+(-a)\right)=0_S \Rightarrow \psi (a)+\psi (-a)=0_S \Rightarrow \psi (-a)=0_S \Rightarrow -a \in \ker \psi,a+(-a)=0_R$
+
+				加法的交换律、结合律，乘法的结合律，左、右分配律是显然成立的。
 			\end{proof}
 	\section{环的理想}
 		\begin{defn}{理想}{}
@@ -170,17 +206,6 @@
 
 				如果$\forall \alpha \in M,1_R \cdot \alpha =\alpha $，那么我们称$M$是一个幺模。
 			\end{defn}
-			我们之所以刻意区分左右模，并且还提出双模的概念，是因为环不一定交换，因此$a\alpha $和$\alpha a$并不等价。
-
-			以下命题指出了一个事实：只有在环是交换幺环时，左右幺模才在交换乘法次序的关系下等价。
-			\begin{proposition}
-				设$R$是一个交换环，$M$既是左$R-$模，又是右$R-$模，那么
-
-				$E = \{(a\alpha ,\alpha a)| a \in R,\alpha \in M\} \subseteq M \times M$是一个等价关系
-			\end{proposition}
-			\begin{proof}
-				
-			\end{proof}
 			在后续中，除非特别做区分，我们都假定我们说的模指的是左模。
 		\subsection{模的同态}
 			\begin{defn}{模同态}{}
