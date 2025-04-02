@@ -50,14 +50,24 @@
 			\begin{them}{循环的整环必有素零因子}{}
 				设$R$是一个整环，
 				
-				我们定义：$N : \Z \ni n \mapsto n_F \in R$，满足$(n+1)_F = n_F+1_F$
+				我们定义：$N : \Z \ni n \mapsto n_R \in R$，满足$(n+1)_F = n_F+1_F$
 
-				如果$\exists a \in R,a \neq 0,\exists n \in \N,n_F a = 0_R$
+				如果$\exists a \in R,a \neq 0,\exists n \in \N_+,n_F a = 0_R$
 
 				那么存在素数$p$，$\forall b \in R,p_R b=0_R$
 			\end{them}
 			\begin{proof}
-				
+				取$\forall b \in R$,
+
+				$0_R=0_R\cdot b=(n_R a)b=a(n_R b)$
+
+				因为$a \neq 0$，而$R$是整环，所以一定有$n_R b=0$，因此，$\{k\in \N_+|k_R b=0\}$不是空集。
+
+				取$p$为使$p_R b=0$的最小正整数。如果$p$是素数，命题成立；
+
+				如果$p$不是素数，那么只需要对$p$作唯一分解，那么有$\left(\prod\limits_{i=1}^{q} {p_i}_R\right)b=0$
+
+				那么，一定存在一个${p_i}_R b=0$，此时命题也是成立的。
 			\end{proof}
 		\subsection{子环}
 			我们也类似地提出后续我们会提及的子环的概念。
@@ -134,18 +144,83 @@
 
 				加法的交换律、结合律，乘法的结合律，左、右分配律是显然成立的。
 			\end{proof}
+			\begin{proposition}
+				设$\psi :R \rightarrow S$是一个环同态，那么$\text{Im } \psi $是一个$S$的子环
+			\end{proposition}
+			\begin{proof}
+				取$\forall a,b \in \text{Im } \psi$，那么有$\exists x,y \in R,\psi (x)=a,\psi (y)=b$
+
+				我们注意到：$\psi (0_R) = 0_S \Rightarrow 0_S \in \text{Im } \psi ,\psi (x)+\psi (0_R)=\psi (x)$
+
+				$\psi (x)+\psi (-x)=\psi (x+(-x))=\psi (0_R)=0_S \Rightarrow \psi (-x)=-\psi (x)=-a \in \text{Im } \psi ,a+(-a)=0_S$
+
+				加法的交换律、结合律，乘法的结合律，左、右分配律是显然成立的。
+			\end{proof}
 	\section{环的理想}
-		\begin{defn}{理想}{}
-			设$R$是一个环，$R$的子环$R$如果满足：
+		\subsection{理想的定义}
+			\begin{defn}{理想}{}
+				设$R$是一个环，$R$是$R$的一个子环。
 
-			$\forall a \in R,b \in S,ab \in S$，那么我们称$S$是$R$的一个理想
-		\end{defn}
-		我们观察到：一些环，比如说$\Z$，他们有一种特殊的理想，比如说$\forall m \in \Z,m\Z$是$\Z$的一个理想。我们把这种直接由一个元素“生成”的理想叫主理想。
-		\begin{defn}{主理想}{}
-			设$R$是一个环，如果$R$的一个理想$S$满足：
+				如果$\forall a \in S,b \in R,ab \in S$，那么我们称$S$是$R$的一个左理想；
 
-			$\exists a \in R,S=aR := \{ab | b \in R\}$，那么我们称$S$是由$a$生成的主理想，记作$(a)$
-		\end{defn}
+				如果$\forall a \in S,b \in R,ba \in S$，那么我们称$S$是$R$的一个右理想；
+
+				如果$S$既是$R$的左理想，又是$R$的右理想，那么我们称$S$是$R$的一个双理想。
+			\end{defn}
+			显然，$\{0_R\},R$都是$R$的理想，我们称之为平凡理想。
+
+			我们观察到：一些环，比如说$\Z$，他们有一种特殊的理想，比如说$\forall m \in \Z,m\Z$是$\Z$的一个理想。我们把这种直接由一个元素“生成”的理想叫主理想。
+			\begin{defn}{主理想}{}
+				设$R$是一个环，如果$R$的一个理想$S$满足：
+
+				$\exists a \in R,S=aR := \{ab | b \in R\}$，那么我们称$S$是由$a$生成的主理想，记作$(a)$
+			\end{defn}
+		\subsection{理想的性质}
+		\begin{para}{0}
+			\point{}
+				\begin{proposition}
+					设$\psi :R \rightarrow S$是一个环同态，那么$\ker \psi$是$S$的一个理想
+				\end{proposition}
+				\begin{proof}
+					取$\forall a \in \ker \psi$，依核的定义，$\psi (a)=0_S$
+
+					那么，$\forall b \in R,\psi (ab)=\psi (a)\psi (b)=0_S,\psi (ba)=\psi (b)\psi (a)=0_S$
+
+					因此，$ab,ba \in \ker \psi$，于是命题得证。
+				\end{proof}
+			\point{}
+				\begin{proposition}
+					设$R$是一个幺环，$S$是$R$的一个双理想，如果$1_R \in S$，那么$S=R$
+				\end{proposition}
+				\begin{proof}
+					依理想的定义，$\forall b \in R,1_R b=b 1_R = b \in S$，所以$R \subseteq S$，所以必须有$R=S$
+				\end{proof}
+				我们可以立即得出，最特殊的幺环——域，也可以应用上述性质
+				\begin{corollary}{域没有非平凡理想}{}
+					域只有平凡理想
+				\end{corollary}
+				\begin{proof}
+					设$F$是一个域，$S$是$F$的一个理想
+
+					因为域中任意元素都有逆元素，所以$\forall a \in S,a^{-1} \in F$
+
+					而按照理想的概念，$a \cdot a^{-1}=1_F \in S$
+
+					而按照前面的命题，$1_F \in S$，那么一定有$S = F$，它是一个平凡理想；
+				\end{proof}
+		\end{para}
+	\section{商环}
+		\subsection{商环的定义}
+			我们首先定义等价类，随后定义商环
+			\begin{defn}{关于环的理想的等价类}{}
+				设$R$是一个环，$S$是$R$的一个理想
+
+			\end{defn}
+			\begin{defn}
+				设$R$是一个环，$S$是$R$的一个理想，那么我们定义：
+
+				
+			\end{defn}
 	\section{模}
 		本节我们研究一种“环上的线性空间”，也就是模
 		\subsection{模的定义}
