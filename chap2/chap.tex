@@ -214,13 +214,54 @@
 			我们首先定义等价类，随后定义商环
 			\begin{defn}{关于环的理想的等价类}{}
 				设$R$是一个环，$S$是$R$的一个理想
-
-			\end{defn}
-			\begin{defn}
-				设$R$是一个环，$S$是$R$的一个理想，那么我们定义：
-
 				
+				我们定义$R \times R$上的一个等价关系：$\underset{I}{\sim} : \{(x,y) | x-y \in I\} \subseteq R \times R$
+
+				并定义$a \in R$关于$\underset{I}{\sim}$的等价类为：$a +I :=\overline{a} := \{x \in R | x \underset{I}{\sim} a\}$
 			\end{defn}
+			我们其实还需要验证以上关系的确是一个等价关系：
+
+			首先，$\forall a \in R,a \sim a$，因为$a-a=0_R \in I$，这说明自反性成立；
+
+			其次，如果$a \sim b$，那么有$a-b \in I$，而$I$是一个理想，所以一定有$b-a \in I$，所以$b \sim a$，这说明对称性成立；
+
+			最后，如果$a \sim b,b \sim c$，那么有$a-b \in I,b-c \in I$，而$I$是一个理想，所以一定有$(a-b)+(b-c)=(a-c) \in I$，所以$a \sim c$，这说明传递性成立；
+			\begin{defn}{商环}{}
+				设$R$是一个环，$I$是$R$的一个理想，那么我们定义：
+
+				$R/I = \{a +I | a \in R\}$，称为$R$关于$I$的商环
+
+				并定义其中的环加法和环乘法为：
+
+				$(a+I)+(b+I)=(a+b)+I,(a+I)\cdot(b+I)=(a\cdot b)+I$
+			\end{defn}
+			事实上，由于$a+I$是一个等价类，我们还需要验证，如果$a_1+I=a_2+I$，即同一等价类选取不同单位元下，运算结果是一致的。
+			\begin{proposition}{商环的加法和乘法是良定义的}{}
+				设$R$是一个环，$I$是$R$的一个理想，那么如果$a_1+I=a_2+I,b_1+I=b_2+I$
+
+				那么$(a_1+I)+(b_1+I)=(a_2+I)+(b_2+I),(a_1+I)\cdot (b_1+I)=(a_2+I)\cdot (b_2+I)$
+			\end{proposition}
+			\begin{proof}
+				对于第一条，只需证明$(a_1+b_1)-(a_2+b_2) \in I$。
+
+				因为$(a_1+b_1)-(a_2+b_2)=(a_1-a_2)+(b_1-b_2)$，而$a_1-a_2 \in I,b_1-b_2 \in I$，所以$(a_1+b_1)-(a_2+b_2) \in I$
+				
+				对于第二条，只需证明$(a_1\cdot b_1)-(a_2\cdot b_2) \in I$。
+
+				因为$(a_1\cdot b_1)-(a_2\cdot b_2)=(a_1\cdot b_1-a_1\cdot b_2)+(a_1\cdot b_2-a_2\cdot b_2)$
+
+				$=a_1(b_1-b_2)+(a_1-a_2)b_2 \in I$，因为$I$是一个理想。
+			\end{proof}
+	\section{同态基本定理}
+		\subsection{同态基本定理}
+			\begin{them}{同态第一基本定理}{}
+				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个环同态，那么：
+
+				$R / \ker \varphi \cong \text{Im }\varphi $
+			\end{them}
+			\begin{proof}
+				
+			\end{proof}
 	\section{模}
 		本节我们研究一种“环上的线性空间”，也就是模
 		\subsection{模的定义}
@@ -291,6 +332,10 @@
 				$\forall a \in R,\alpha  \in M,\psi (a\alpha )=a\psi (\alpha )$
 
 				那么称$\psi $是一个从$M$到$N$的模同态。
+			\end{defn}
+		\subsection{商模}
+			\begin{defn}{商模}{}
+				设$M$是一个模，$N$是$M$的一个子模
 			\end{defn}
 \ifx\allfiles\undefined
 \end{document}

@@ -405,6 +405,12 @@ INPUT ./chap.aux
 INPUT chap.aux
 OUTPUT chap.aux
 INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+INPUT ./chap.out
+INPUT ./chap.out
+INPUT chap.out
+INPUT chap.out
+INPUT ./chap.out
+INPUT ./chap.out
 OUTPUT chap.out
 INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
