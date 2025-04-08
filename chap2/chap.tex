@@ -260,7 +260,21 @@
 				$R / \ker \varphi \cong \text{Im }\varphi $
 			\end{them}
 			\begin{proof}
+				我们考虑以下映射：
+
+				$\psi : R / \ker \varphi \ni a+\ker \varphi  \mapsto \varphi (a) \in \text{Im }\varphi $
+
+				首先，$\psi \left((a+\ker \varphi )+(b+\ker \varphi )\right)=\psi \left((a+b)+\ker \varphi \right)=\varphi (a+b)=\varphi (a)+\varphi (b)=\psi (a+\ker \varphi )+\psi (b+\ker \varphi )$
 				
+				$\psi \left((a+\ker \varphi )\cdot (b+\ker \varphi )\right)=\psi (ab+\ker \varphi )=\varphi (ab)=\varphi (a)\varphi (b)=\psi (a+\ker \varphi )\cdot \psi (b+\ker \varphi )$
+
+				这说明$\psi $是一个同态，我们接下来只需要证明双射性。
+
+				首先证明单射性，如果$\psi (a+\ker \varphi )=\psi (b+\ker \varphi )$，即$\varphi (a)=\varphi (b)$，那么$\varphi (a)-\varphi (b)=\varphi (a-b)=0_R$，所以$a-b \in \ker \varphi $，于是$a+\ker \varphi =b+\ker \varphi $，单射性成立。
+
+				满射性是显然的，因为显然$\forall b \in \text{Im }\varphi ,\exists a \in R,\varphi (a)=b,\psi (a+\ker \varphi )=\varphi (a)=b$
+
+				于是命题得证。
 			\end{proof}
 	\section{模}
 		本节我们研究一种“环上的线性空间”，也就是模
