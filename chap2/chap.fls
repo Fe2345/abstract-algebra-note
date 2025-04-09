@@ -440,6 +440,29 @@ INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhc
 INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
 OUTPUT chap.xdv
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT chap.aux
 INPUT ./chap.out
 INPUT ./chap.out
