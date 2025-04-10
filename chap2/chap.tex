@@ -256,8 +256,11 @@
 		\subsection{同态基本定理}
 			\begin{them}{同态基本定理}{}
 				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个环同态，那么：
+				\begin{equation}
+					R / \ker \varphi \cong \text{Im }\varphi 
+				\end{equation}
 
-				$R / \ker \varphi \cong \text{Im }\varphi $，并且同构映射唯一。
+				并且同构映射$\psi $唯一，即$\psi : R / \ker \varphi \ni a+\ker \varphi  \mapsto \varphi (a) \in \text{Im }\varphi $
 			\end{them}
 			\begin{proof}
 				我们考虑以下映射：
@@ -268,19 +271,31 @@
 				
 				$\psi \left((a+\ker \varphi )\cdot (b+\ker \varphi )\right)=\psi (ab+\ker \varphi )=\varphi (ab)=\varphi (a)\varphi (b)=\psi (a+\ker \varphi )\cdot \psi (b+\ker \varphi )$
 
-				这说明$\psi $是一个同态，我们接下来只需要证明双射性。
+				这说明$\psi $是一个同态，我们接下来证明双射性。
 
 				首先证明单射性，如果$\psi (a+\ker \varphi )=\psi (b+\ker \varphi )$，即$\varphi (a)=\varphi (b)$，那么$\varphi (a)-\varphi (b)=\varphi (a-b)=0_R$，所以$a-b \in \ker \varphi $，于是$a+\ker \varphi =b+\ker \varphi $，单射性成立。
 
 				满射性是显然的，因为显然$\forall b \in \text{Im }\varphi ,\exists a \in R,\varphi (a)=b,\psi (a+\ker \varphi )=\varphi (a)=b$
 
-				于是命题得证。
+				我们最后证明同构映射唯一性，设$\psi : R / \ker \varphi \ni a+\ker \varphi  \mapsto \varphi (a) \in \text{Im }\varphi $
+				
+				因为$a+\ker \varphi =b+\ker \varphi \Rightarrow a-b \in \ker \varphi \Rightarrow \varphi (a)-\varphi (b)=0$，所以它的确是映射。它是一个同构映射是显然的。
+
+				我们又设$\chi  : R / \ker \varphi \rightarrow \text{Im }\varphi $是一个同构映射。
+
+				那么，一定有$\varphi =\chi \circ \pi_{\ker \varphi }$，其中$\pi_{\ker \varphi } : R \ni a \mapsto  a+\ker \varphi \in R/\ker \varphi $
+
+				我们注意到，$\psi(a+\ker \varphi )=\varphi (a)=\chi \left(\pi_{\ker \varphi }(a)\right)=\chi(a+\ker \varphi )$
+				
+				所以一定有$\psi =\chi $，于是命题得证。
 			\end{proof}
 		\subsection{同构基本定理}
 			\begin{them}{同构第一基本定理}{}
 				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，那么：
-
-				$R / \ker \varphi \cong S $，并且同构映射唯一。
+				\begin{equation}
+					R / \ker \varphi \cong S
+				\end{equation}
+				并且同构映射唯一。
 			\end{them}
 			\begin{proof}
 				这个定理事实上是同态基本定理的一个特例，因为如果$\varphi $满，那么一定有$\text{Im }\varphi = S$
@@ -337,13 +352,22 @@
 			\begin{lemma}{}{}
 				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，$I=\ker \varphi$是一个理想
 
-				那么对于包含$I$的任意一个$R$的理想$J$，存在唯一的环同态$\chi : R/J \rightarrow S$，
+				那么对于包含于$I$的任意一个$R$的理想$J$，存在唯一的环同态$\chi : R/J \rightarrow S$，
 				
 				使得$\varphi =\chi \circ \pi_I$，其中$\pi_I : R \ni a \mapsto a+I \in R/I$
-			\end{lemma}
 
-			\begin{them}{同构第二基本定理}{}
+				并且此时$\ker \chi =I/J$
+			\end{lemma}
+			\begin{proof}
 				
+			\end{proof}
+			\begin{them}{同构第二基本定理}{}
+				设$R$是一个环，$I,J$是$R$的两个理想，并且$I \subseteq J$。
+
+				那么$J/I$是$R/I$的理想，并且
+				\begin{equation}
+					(R/I)/(J/I) \cong R/J
+				\end{equation}
 			\end{them}
 	\section{模}
 		本节我们研究一种“环上的线性空间”，也就是模
