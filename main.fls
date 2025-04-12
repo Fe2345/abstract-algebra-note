@@ -409,6 +409,9 @@ INPUT config/cover.aux
 INPUT ./chap1/chap.aux
 INPUT ./chap1/chap.aux
 INPUT chap1/chap.aux
+INPUT ./chap2/chap.aux
+INPUT ./chap2/chap.aux
+INPUT chap2/chap.aux
 INPUT ./chap4/chap.aux
 INPUT ./chap4/chap.aux
 INPUT chap4/chap.aux
@@ -484,6 +487,22 @@ OUTPUT chap1/chap.aux
 INPUT ./chap1/chap.tex
 INPUT ./chap1/chap.tex
 INPUT chap1/chap.tex
+INPUT ./chap2/chap.tex
+INPUT ./chap2/chap.tex
+OUTPUT chap2/chap.aux
+INPUT ./chap2/chap.tex
+INPUT ./chap2/chap.tex
+INPUT chap2/chap.tex
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT d:/Program Files (x86)/texlive/2024/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT ./chap4/chap.tex
 INPUT ./chap4/chap.tex
 OUTPUT chap4/chap.aux
@@ -503,6 +522,9 @@ INPUT config/cover.aux
 INPUT ./chap1/chap.aux
 INPUT ./chap1/chap.aux
 INPUT chap1/chap.aux
+INPUT ./chap2/chap.aux
+INPUT ./chap2/chap.aux
+INPUT chap2/chap.aux
 INPUT ./chap4/chap.aux
 INPUT ./chap4/chap.aux
 INPUT chap4/chap.aux

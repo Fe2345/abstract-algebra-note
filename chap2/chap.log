@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  10 APR 2025 19:16
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.3)  12 APR 2025 23:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1172,28 +1172,28 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 ]
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 81.
- [2] [3] [4] [5] [6] [7]
+ [2] [3] [4] [5] [6] [7] [8]
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 17.28183pt on input line 338.
+(Font)              scaled to size 17.28183pt on input line 362.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 338.
+(Font)              scaled to size 10.00107pt on input line 362.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 17.27815pt on input line 338.
+(Font)              scaled to size 17.27815pt on input line 362.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 338.
+(Font)              scaled to size 9.99893pt on input line 362.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 20.74222pt on input line 342.
+(Font)              scaled to size 20.74222pt on input line 366.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 342.
+(Font)              scaled to size 14.40152pt on input line 366.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 20.73778pt on input line 342.
+(Font)              scaled to size 20.73778pt on input line 366.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 342.
+(Font)              scaled to size 14.39845pt on input line 366.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 346.
+(Font)              scaled to size 7.00075pt on input line 370.
 LaTeX Font Info:    Font shape `TU/LatinModernMath-Regular(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 346.
- [8] [9] [10] [11] (./chap.aux)
+(Font)              scaled to size 6.99925pt on input line 370.
+ [9] [10] [11] [12] (./chap.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -1201,7 +1201,7 @@ L3 programming layer <2022/08/05>
 Package rerunfilecheck Info: File `chap.out' has not changed.
 (rerunfilecheck)             Checksum: CBBFB6FA1B1A51FAED486FBB7E4E4246;1881.
  )
-(\end occurred when \ifx on line 447 was incomplete) 
+(\end occurred when \ifx on line 494 was incomplete) 
 Here is how much of TeX's memory you used:
  39535 strings out of 474773
  874966 string characters out of 5752390
@@ -1211,4 +1211,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  98i,7n,120p,3692b,2937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on chap.xdv (11 pages, 196180 bytes).
+Output written on chap.xdv (12 pages, 211576 bytes).

@@ -99,6 +99,13 @@
 
 				$\Rightarrow \varphi (0_R)=0_S$
 			\end{proof}
+			并且把逆元映射到逆元
+			\begin{proposition}
+				设$\varphi : R \rightarrow S$是一个环同态，那么$\varphi (-a) = -\varphi (a)$
+			\end{proposition}
+			\begin{proof}
+				注意到，$0_S = \varphi (0_R) = \varphi (a + (-a)) = \varphi (a) + \varphi (-a) \Rightarrow \varphi (-a)=-\varphi (a)$
+			\end{proof}
 			\begin{defn}{单同态、满同态、同构}{}
 				假设有环同态$\psi :R \rightarrow S$
 
@@ -267,6 +274,8 @@
 
 				$\psi : R / \ker \varphi \ni a+\ker \varphi  \mapsto \varphi (a) \in \text{Im }\varphi $
 
+				因为$a+\ker \varphi =b+\ker \varphi \Rightarrow a-b \in \ker \varphi \Rightarrow \varphi (a)-\varphi (b)=0$，所以它的确是映射。
+
 				首先，$\psi \left((a+\ker \varphi )+(b+\ker \varphi )\right)=\psi \left((a+b)+\ker \varphi \right)=\varphi (a+b)=\varphi (a)+\varphi (b)=\psi (a+\ker \varphi )+\psi (b+\ker \varphi )$
 				
 				$\psi \left((a+\ker \varphi )\cdot (b+\ker \varphi )\right)=\psi (ab+\ker \varphi )=\varphi (ab)=\varphi (a)\varphi (b)=\psi (a+\ker \varphi )\cdot \psi (b+\ker \varphi )$
@@ -277,11 +286,9 @@
 
 				满射性是显然的，因为显然$\forall b \in \text{Im }\varphi ,\exists a \in R,\varphi (a)=b,\psi (a+\ker \varphi )=\varphi (a)=b$
 
-				我们最后证明同构映射唯一性，设$\psi : R / \ker \varphi \ni a+\ker \varphi  \mapsto \varphi (a) \in \text{Im }\varphi $
-				
-				因为$a+\ker \varphi =b+\ker \varphi \Rightarrow a-b \in \ker \varphi \Rightarrow \varphi (a)-\varphi (b)=0$，所以它的确是映射。它是一个同构映射是显然的。
+				我们最后证明同构映射唯一性
 
-				我们又设$\chi  : R / \ker \varphi \rightarrow \text{Im }\varphi $是一个同构映射。
+				我们设$\chi  : R / \ker \varphi \rightarrow \text{Im }\varphi $是一个同构映射。
 
 				那么，一定有$\varphi =\chi \circ \pi_{\ker \varphi }$，其中$\pi_{\ker \varphi } : R \ni a \mapsto  a+\ker \varphi \in R/\ker \varphi $
 
@@ -304,13 +311,30 @@
 			\begin{lemma}{}{}
 				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，$I=\ker \varphi$是一个理想，那么：
 
-				任意一个包含$I$的$R$子环$R^{\prime} \subseteq R$，其在$\varphi $下的像$S^{\prime}=\varphi (R^{\prime})$是$S$的一个子环；
+				任意一个$R$的子环$R^{\prime} \subseteq R$，其在$\varphi $下的像$S^{\prime}=\varphi (R^{\prime})$是$S$的一个子环；
 
 				同时，任意一个$S$的子环$S^{\prime}$，$R^{\prime}=\{r \in R| \varphi (r) \in S^{\prime}\}$也是一个包含了$I$的$R$的子环
 			\end{lemma}
 			\begin{proof}
-				
+				首先先证明第一条结论。
+
+				$\forall a,b \in R^{\prime}=\varphi (a)+\varphi (b)=\varphi (a+b)\in S^{\prime}$
+
+				$\varphi (a)\cdot \varphi (b)=\varphi (ab) \in S^{\prime}$
+
+				$\varphi (a) + \varphi (0_R) = \varphi (a) \in S^{\prime},\varphi (a)+\varphi (-a)=\varphi (0_R)=0_S$
+
+				然后证明第二条结论
+
+				首先，因为$\forall r \in \ker \varphi ,\varphi (r) = 0$，所以一定有$\ker \varphi \in R^{\prime}$
+
+				$\forall a,b \in R^{\prime}$，一定有$\varphi (a),\varphi (b) \in S^{\prime}$，所以$\varphi (a+b)=\varphi (a)+\varphi (b) \in S^{\prime} \Rightarrow a+b \in R^{\prime}$
+
+				$\varphi (a)\cdot \varphi (b)=\varphi (ab) \in S^{\prime} \Rightarrow ab \in R^{\prime}$
+
+				$\varphi (a) + \varphi (0_R) = \varphi (a) \in S^{\prime} \Rightarrow a+0_R=a \in R^{\prime},\varphi (a)+\left(-\varphi (a)\right)=0_S \in S^{\prime}\Rightarrow \varphi (-a) \in S^{\prime} \Rightarrow -a \in R^{\prime}$
 			\end{proof}
+			值得注意的是，这个引理中，第一个结论中我们没有要求子环包含同态的核，但是我们随后又提出，从$S$反向映射回来后必须包含同态的核。这并不是矛盾的，因为我们没有限定同态是双射。
 
 			\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
@@ -354,12 +378,26 @@
 
 				那么对于包含于$I$的任意一个$R$的理想$J$，存在唯一的环同态$\chi : R/J \rightarrow S$，
 				
-				使得$\varphi =\chi \circ \pi_I$，其中$\pi_I : R \ni a \mapsto a+I \in R/I$
+				使得$\varphi =\chi \circ \pi_J$，其中$\pi_J : R \ni a \mapsto a+J \in R/I$
 
 				并且此时$\ker \chi =I/J$
 			\end{lemma}
 			\begin{proof}
+				我们考虑我们之前曾经构造的映射：$\chi : R / J \ni a+J \mapsto \varphi (a) \in S$
+
+				我们之前已经证明了它是一个同构映射，我们接下来证明$\ker \chi = I/J$
+
+				因为$\ker \chi =\{a+J | \chi (a+J)=0_S\}$
+
+				而$\chi (a+J)=\varphi (a)$，所以$a+J \in \ker \chi \Rightarrow \varphi (a)=0 \Rightarrow a\in I$
+
+				所以$\ker \chi = I/J$，我们接下来证明$\chi $是唯一的，并且$\varphi =\chi \circ \pi_J$
+
+				我们设$\psi : R/J \rightarrow S$是一个同构映射。他显然也满足$\varphi =\psi \circ \pi_J$
+
+				我们注意到，$\chi(a+J)=\varphi (a)=\psi \left(\pi_{J}(a)\right)=\psi(a+J)$
 				
+				所以一定有$\psi =\chi $，于是命题得证。
 			\end{proof}
 			\begin{them}{同构第二基本定理}{}
 				设$R$是一个环，$I,J$是$R$的两个理想，并且$I \subseteq J$。
@@ -369,6 +407,15 @@
 					(R/I)/(J/I) \cong R/J
 				\end{equation}
 			\end{them}
+			\begin{proof}
+				我们考虑满同态$\varphi : R \ni a \mapsto a+J \in R/J$
+
+				注意到：$\ker \varphi =\{a|a+J=0_{R/J}\}=\{a|a+J=J\}=\{a|a-0_R \in J\}=J$
+
+				运用前面的引理，那么一定有一个同态$\chi : R/I \rightarrow R/J$，并且$\ker \chi =J/I$
+
+				接下来运用同构第一基本定理，于是有$(R/I)/(J/I) \cong R/J$，命题得证。
+			\end{proof}
 	\section{模}
 		本节我们研究一种“环上的线性空间”，也就是模
 		\subsection{模的定义}
