@@ -1,19 +1,19 @@
 # Fdb version 4
-["xdvipdfmx"] 1744461614.06842 "main.xdv" "main.pdf" "main" 1744461614.89786 0
-  "main.xdv" 1744461613 493316 e025ee55df051118bc5629a401f0aa1b "xelatex"
+["xdvipdfmx"] 1744634267.65265 "main.xdv" "main.pdf" "main" 1744634268.59322 0
+  "main.xdv" 1744634267 515276 7d3bc3769f7cca512146700ba1380fb4 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1744461610.87357 "d:/文件/学习/各个课程学习笔记收录/抽象代数/main.tex" "main.xdv" "main" 1744461614.88294 0
+["xelatex"] 1744634264.3647 "d:/文件/学习/各个课程学习笔记收录/抽象代数/main.tex" "main.xdv" "main" 1744634268.5732 0
   "c:/Windows/Fonts/msyh.ttc" 1736561799 19704352 1e10e74402e59d54499af795caf0b135 ""
-  "chap1/chap.aux" 1744461613 2982 5319052e099281879150e31bae94b0d2 "xelatex"
+  "chap1/chap.aux" 1744634266 2982 5319052e099281879150e31bae94b0d2 "xelatex"
   "chap1/chap.tex" 1743084985 22144 ee924ea7a81bba9028c7d51f03a1b4cb ""
-  "chap2/chap.aux" 1744461613 3819 14029d550a5f1fca246b9f169bbfa66f "xelatex"
-  "chap2/chap.tex" 1744461541 28251 1fc96f7407fe8c6ad2bb77b6dba533aa ""
-  "chap4/chap.aux" 1744461613 1463 b9353a68e9331d7f8d25c178a75d6564 "xelatex"
+  "chap2/chap.aux" 1744634267 3946 e27090435416990b38a2cc9054fa0a66 "xelatex"
+  "chap2/chap.tex" 1744633922 30813 1a631ce6d8b73bf6ac56937c283692bb ""
+  "chap4/chap.aux" 1744634267 1463 54010f0875441ceb81fcffca707e1ad7 "xelatex"
   "chap4/chap.tex" 1740824915 673 c9e9c4d8e29d6aa3ea83cb0796cf5cc5 ""
   "config/_config.tex" 1740199157 398 2d1472601806f0837ac42da6d336e742 ""
-  "config/cover.aux" 1744461613 1141 7d63e8682bb6208a9874121d33f6552d "xelatex"
+  "config/cover.aux" 1744634266 1141 7d63e8682bb6208a9874121d33f6552d "xelatex"
   "config/cover.tex" 1735992666 569 e6962aaf1ab693c8ae87789db235e8d7 ""
   "config/cover_text_0.tex" 1699031078 104 290d86fe46a8e42bb0513c12a3685e25 ""
   "config/custom.tex" 1739771609 848 a3a043e8590ca8c6fb5aacb0c28f777f ""
@@ -240,12 +240,12 @@
   "d:/Program Files (x86)/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1735883004 10850220 00111e35ff84ce4a94f863e2ab2bb4e3 ""
   "d:/Program Files (x86)/texlive/2024/texmf.cnf" 1735882676 713 e69b156964470283e0530f5060668171 ""
   "d:/文件/学习/各个课程学习笔记收录/抽象代数/main.tex" 1744461603 288 609930057b1d039eb384c7ddaed2d82e ""
-  "extra/extra.aux" 1744461613 1784 d814b73d9ff196f5a7cc786880fe1a08 "xelatex"
+  "extra/extra.aux" 1744634267 1784 5dbd1b6728d1608576122818ab2d5767 "xelatex"
   "extra/extra.tex" 1742309837 2175 541f49c79943dc164ccc4bf0687b1205 ""
-  "main.aux" 1744461613 357 080bf1896b02ca6ce83a65d65ea16e5f "xelatex"
-  "main.out" 1744461613 3669 35932fd166ad5af1c39c11a2ef4e0656 "xelatex"
+  "main.aux" 1744634267 357 da25fdd804ca298c0a0127820694cf2d "xelatex"
+  "main.out" 1744634267 3771 f96cadc2f59d732495e6421ac2abe4f6 "xelatex"
   "main.tex" 1744461603 288 609930057b1d039eb384c7ddaed2d82e ""
-  "main.toc" 1744461613 3288 6d3bdfebcf239f40f656f7a1cbcf4b79 "xelatex"
+  "main.toc" 1744634267 3374 eae5600f3366da0c907659c238b5dd83 "xelatex"
   (generated)
   "chap1/chap.aux"
   "chap2/chap.aux"

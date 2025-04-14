@@ -88,24 +88,6 @@
 				
 				那么我们称$\varphi $是一个$R$到$S$的环同态。
 			\end{defn}
-			显然，同态一定将零元映射到零元
-			\begin{proposition}
-				设$\varphi : R \rightarrow S$是一个环同态，那么$\varphi (0_R) = 0_S$
-			\end{proposition}
-			\begin{proof}
-				$\varphi (0_R) = \varphi (0_R + 0_R) = \varphi (0_R) + \varphi (0_R)$
-
-				$\Rightarrow -\varphi (0_R)+\varphi (0_R) = -\varphi (0_R)+\varphi (0_R)+\varphi (0_R)$
-
-				$\Rightarrow \varphi (0_R)=0_S$
-			\end{proof}
-			并且把逆元映射到逆元
-			\begin{proposition}
-				设$\varphi : R \rightarrow S$是一个环同态，那么$\varphi (-a) = -\varphi (a)$
-			\end{proposition}
-			\begin{proof}
-				注意到，$0_S = \varphi (0_R) = \varphi (a + (-a)) = \varphi (a) + \varphi (-a) \Rightarrow \varphi (-a)=-\varphi (a)$
-			\end{proof}
 			\begin{defn}{单同态、满同态、同构}{}
 				假设有环同态$\psi :R \rightarrow S$
 
@@ -128,6 +110,27 @@
 
 				$\Rightarrow \psi^{-1} (a)\psi^{-1} (b)=\psi (ab)$，于是命题得证
 			\end{proof}
+		\subsection{同态的性质}
+		\begin{para}{0}
+			\point{同态一定将零元映射到零元}
+				\begin{proposition}
+					设$\varphi : R \rightarrow S$是一个环同态，那么$\varphi (0_R) = 0_S$
+				\end{proposition}
+				\begin{proof}
+					$\varphi (0_R) = \varphi (0_R + 0_R) = \varphi (0_R) + \varphi (0_R)$
+
+					$\Rightarrow -\varphi (0_R)+\varphi (0_R) = -\varphi (0_R)+\varphi (0_R)+\varphi (0_R)$
+
+					$\Rightarrow \varphi (0_R)=0_S$
+				\end{proof}
+			\point{同态把逆元映射到逆元}
+				\begin{proposition}
+					设$\varphi : R \rightarrow S$是一个环同态，那么$\varphi (-a) = -\varphi (a)$
+				\end{proposition}
+				\begin{proof}
+					注意到，$0_S = \varphi (0_R) = \varphi (a + (-a)) = \varphi (a) + \varphi (-a) \Rightarrow \varphi (-a)=-\varphi (a)$
+				\end{proof}
+		\end{para}
 		\subsection{同态的核、像}
 			\begin{defn}{环同态的核、像}{}
 				设$\psi : R \rightarrow S$是一个环同态，我们定义：
@@ -163,6 +166,72 @@
 
 				加法的交换律、结合律，乘法的结合律，左、右分配律是显然成立的。
 			\end{proof}
+			\begin{them}{满同态把子环映射到子环}{}
+				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，$I=\ker \varphi$是一个子环，那么：
+
+				任意一个$R$的子环$R^{\prime} \subseteq R$，其在$\varphi $下的像$S^{\prime}=\varphi (R^{\prime})$是$S$的一个子环；
+
+				同时，任意一个$S$的子环$S^{\prime}$，$R^{\prime}=\{r \in R| \varphi (r) \in S^{\prime}\}$也是一个包含了$I$的$R$的子环
+			\end{them}
+			\begin{proof}
+				首先先证明第一条结论。
+
+				$\forall a,b \in R^{\prime}=\varphi (a)+\varphi (b)=\varphi (a+b)\in S^{\prime}$
+
+				$\varphi (a)\cdot \varphi (b)=\varphi (ab) \in S^{\prime}$
+
+				$\varphi (a) + \varphi (0_R) = \varphi (a) \in S^{\prime},\varphi (a)+\varphi (-a)=\varphi (0_R)=0_S$
+
+				然后证明第二条结论
+
+				首先，因为$\forall r \in \ker \varphi ,\varphi (r) = 0$，所以一定有$\ker \varphi \in R^{\prime}$
+
+				$\forall a,b \in R^{\prime}$，一定有$\varphi (a),\varphi (b) \in S^{\prime}$，所以$\varphi (a+b)=\varphi (a)+\varphi (b) \in S^{\prime} \Rightarrow a+b \in R^{\prime}$
+
+				$\varphi (a)\cdot \varphi (b)=\varphi (ab) \in S^{\prime} \Rightarrow ab \in R^{\prime}$
+
+				$\varphi (a) + \varphi (0_R) = \varphi (a) \in S^{\prime} \Rightarrow a+0_R=a \in R^{\prime},\varphi (a)+\left(-\varphi (a)\right)=0_S \in S^{\prime}\Rightarrow \varphi (-a) \in S^{\prime} \Rightarrow -a \in R^{\prime}$
+			\end{proof}
+			值得注意的是，这个引理中，第一个结论中我们没有要求子环包含同态的核，但是我们随后又提出，从$S$反向映射回来后必须包含同态的核。这并不是矛盾的，因为我们没有限定同态是双射。
+
+			上述定理可以用下图表示：
+			\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+			\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+			%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+			%Shape: Ellipse [id:dp6992608779061074] 
+			\draw  [fill={rgb, 255:red, 248; green, 231; blue, 28 }  ,fill opacity=1 ] (61.99,147.34) .. controls (61.3,78.6) and (104.8,22.44) .. (159.14,21.9) .. controls (213.47,21.36) and (258.08,76.65) .. (258.76,145.38) .. controls (259.45,214.12) and (215.95,270.27) .. (161.61,270.81) .. controls (107.27,271.36) and (62.67,216.07) .. (61.99,147.34) -- cycle ;
+			%Shape: Ellipse [id:dp8268210443202992] 
+			\draw  [fill={rgb, 255:red, 248; green, 231; blue, 28 }  ,fill opacity=1 ] (473.66,112.42) .. controls (524.7,112.13) and (566.23,139.21) .. (566.42,172.9) .. controls (566.6,206.59) and (525.38,234.13) .. (474.34,234.42) .. controls (423.3,234.7) and (381.77,207.62) .. (381.58,173.93) .. controls (381.4,140.25) and (422.62,112.7) .. (473.66,112.42) -- cycle ;
+			%Straight Lines [id:da3594704358630838] 
+			\draw    (174,206.84) .. controls (175.68,205.18) and (177.35,205.19) .. (179,206.87) .. controls (180.65,208.55) and (182.32,208.56) .. (184,206.91) .. controls (185.67,205.26) and (187.34,205.27) .. (189,206.94) .. controls (190.66,208.61) and (192.33,208.62) .. (194,206.97) .. controls (195.68,205.32) and (197.35,205.33) .. (199,207.01) .. controls (200.66,208.68) and (202.33,208.69) .. (204,207.04) .. controls (205.68,205.39) and (207.35,205.4) .. (209,207.08) .. controls (210.66,208.75) and (212.33,208.76) .. (214,207.11) .. controls (215.68,205.46) and (217.35,205.47) .. (219,207.15) .. controls (220.66,208.82) and (222.33,208.83) .. (224,207.18) .. controls (225.68,205.53) and (227.35,205.54) .. (229,207.22) .. controls (230.66,208.89) and (232.33,208.9) .. (234,207.25) .. controls (235.68,205.6) and (237.35,205.61) .. (239,207.29) .. controls (240.66,208.96) and (242.33,208.97) .. (244,207.32) .. controls (245.68,205.67) and (247.35,205.68) .. (249,207.36) .. controls (250.66,209.03) and (252.33,209.04) .. (254,207.39) .. controls (255.68,205.74) and (257.35,205.75) .. (259,207.43) .. controls (260.66,209.1) and (262.33,209.11) .. (264,207.46) .. controls (265.68,205.81) and (267.35,205.82) .. (269,207.5) .. controls (270.66,209.17) and (272.33,209.18) .. (274,207.53) .. controls (275.68,205.88) and (277.35,205.89) .. (279,207.57) .. controls (280.66,209.24) and (282.33,209.25) .. (284,207.6) .. controls (285.67,205.95) and (287.34,205.96) .. (289,207.63) .. controls (290.65,209.31) and (292.32,209.32) .. (294,207.67) .. controls (295.67,206.02) and (297.34,206.03) .. (299,207.7) .. controls (300.65,209.38) and (302.32,209.39) .. (304,207.74) .. controls (305.67,206.09) and (307.34,206.1) .. (309,207.77) .. controls (310.65,209.45) and (312.32,209.46) .. (314,207.81) .. controls (315.67,206.16) and (317.34,206.17) .. (319,207.84) .. controls (320.65,209.52) and (322.32,209.53) .. (324,207.88) .. controls (325.67,206.23) and (327.34,206.24) .. (329,207.91) .. controls (330.65,209.59) and (332.32,209.6) .. (334,207.95) .. controls (335.67,206.3) and (337.34,206.31) .. (339,207.98) .. controls (340.65,209.66) and (342.32,209.67) .. (344,208.02) .. controls (345.67,206.37) and (347.34,206.38) .. (349,208.05) .. controls (350.65,209.73) and (352.32,209.74) .. (354,208.09) .. controls (355.67,206.44) and (357.34,206.45) .. (359,208.12) .. controls (360.65,209.8) and (362.32,209.81) .. (364,208.16) .. controls (365.67,206.51) and (367.34,206.52) .. (369,208.19) .. controls (370.66,209.86) and (372.33,209.87) .. (374,208.22) .. controls (375.68,206.57) and (377.35,206.58) .. (379,208.26) .. controls (380.65,209.93) and (382.32,209.94) .. (383.99,208.29) .. controls (385.67,206.64) and (387.34,206.65) .. (388.99,208.33) .. controls (390.65,210) and (392.32,210.01) .. (393.99,208.36) .. controls (395.67,206.71) and (397.34,206.72) .. (398.99,208.4) .. controls (400.65,210.07) and (402.32,210.08) .. (403.99,208.43) .. controls (405.67,206.78) and (407.34,206.79) .. (408.99,208.47) .. controls (410.65,210.14) and (412.32,210.15) .. (413.99,208.5) .. controls (415.67,206.85) and (417.34,206.86) .. (418.99,208.54) .. controls (420.65,210.21) and (422.32,210.22) .. (423.99,208.57) .. controls (425.67,206.92) and (427.34,206.93) .. (428.99,208.61) .. controls (430.65,210.28) and (432.32,210.29) .. (433.99,208.64) .. controls (435.67,206.99) and (437.34,207) .. (438.99,208.68) .. controls (440.65,210.35) and (442.32,210.36) .. (443.99,208.71) .. controls (445.67,207.06) and (447.34,207.07) .. (448.99,208.75) -- (451,208.76) -- (459,208.82) ;
+			\draw [shift={(462,208.84)}, rotate = 180.4] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+			%Shape: Ellipse [id:dp6694038570583041] 
+			\draw  [fill={rgb, 255:red, 144; green, 19; blue, 254 }  ,fill opacity=1 ] (160.11,35.38) .. controls (183.85,35.94) and (202.32,69.07) .. (201.36,109.38) .. controls (200.4,149.69) and (180.38,181.9) .. (156.64,181.34) .. controls (132.9,180.78) and (114.43,147.64) .. (115.39,107.34) .. controls (116.34,67.03) and (136.36,34.82) .. (160.11,35.38) -- cycle ;
+			%Shape: Ellipse [id:dp7396818051441147] 
+			\draw  [fill={rgb, 255:red, 144; green, 19; blue, 254 }  ,fill opacity=1 ] (413.25,157.99) .. controls (412.88,140.74) and (438.13,126.2) .. (469.63,125.54) .. controls (501.14,124.87) and (526.98,138.33) .. (527.34,155.58) .. controls (527.7,172.84) and (502.46,187.38) .. (470.95,188.04) .. controls (439.45,188.71) and (413.61,175.25) .. (413.25,157.99) -- cycle ;
+			%Straight Lines [id:da5729070577321602] 
+			\draw    (176,148) -- (440,156.77) ;
+			\draw [shift={(442,156.84)}, rotate = 181.9] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+			%Shape: Circle [id:dp5046306025149594] 
+			\draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (137,92) .. controls (137,78.19) and (148.19,67) .. (162,67) .. controls (175.81,67) and (187,78.19) .. (187,92) .. controls (187,105.81) and (175.81,117) .. (162,117) .. controls (148.19,117) and (137,105.81) .. (137,92) -- cycle ;
+
+			% Text Node
+			\draw (313,207.4) node [anchor=north west][inner sep=0.75pt]  [font=\Large]  {$\varphi $};
+			% Text Node
+			\draw (158,87.4) node [anchor=north west][inner sep=0.75pt]    {$I$};
+			% Text Node
+			\draw (141,188.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$R$};
+			% Text Node
+			\draw (471,196.4) node [anchor=north west][inner sep=0.75pt]  [font=\Large]  {$S$};
+			% Text Node
+			\draw (147,136.4) node [anchor=north west][inner sep=0.75pt]  [font=\large]  {$R^{\prime }$};
+			% Text Node
+			\draw (448,143.4) node [anchor=north west][inner sep=0.75pt]  [font=\large]  {$S^{\prime }$};
+
+
+			\end{tikzpicture}
 	\section{环的理想}
 		\subsection{理想的定义}
 			\begin{defn}{理想}{}
@@ -261,7 +330,7 @@
 			\end{proof}
 	\section{同态基本定理}
 		\subsection{同态基本定理}
-			\begin{them}{同态基本定理}{}
+			\begin{them}{同态第一定理}{}
 				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个环同态，那么：
 				\begin{equation}
 					R / \ker \varphi \cong \text{Im }\varphi 
@@ -297,125 +366,108 @@
 				所以一定有$\psi =\chi $，于是命题得证。
 			\end{proof}
 		\subsection{同构基本定理}
-			\begin{them}{同构第一基本定理}{}
-				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，那么：
-				\begin{equation}
-					R / \ker \varphi \cong S
-				\end{equation}
-				并且同构映射唯一。
-			\end{them}
-			\begin{proof}
-				这个定理事实上是同态基本定理的一个特例，因为如果$\varphi $满，那么一定有$\text{Im }\varphi = S$
-			\end{proof}
-			在考虑第二同构定理前，我们先讨论一个引理
-			\begin{lemma}{}{}
-				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，$I=\ker \varphi$是一个理想，那么：
+		\begin{para}{0}
+			\point{第一同构定理}
+				\begin{them}{同构第一定理}{}
+					设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，那么：
+					\begin{equation}
+						R / \ker \varphi \cong S
+					\end{equation}
+					并且同构映射唯一。
+				\end{them}
+				\begin{proof}
+					这个定理事实上是同态基本定理的一个特例，因为如果$\varphi $满，那么一定有$\text{Im }\varphi = S$
+				\end{proof}
+			\point{第二同构定理}
+				\begin{them}{第二同构定理}{}
+					设$R$是一个环，$S$是$R$的一个子环，$I$是$R$的一个理想，那么：
+					\begin{equation}
+						S / (S \cap I) \cong (S+I) / I
+					\end{equation}
+					其中$S+I=\{a+b| a \in S,b \in I\}$
+				\end{them}
+				\begin{proof}
+					我们首先验证$S+I$是一个子环
 
-				任意一个$R$的子环$R^{\prime} \subseteq R$，其在$\varphi $下的像$S^{\prime}=\varphi (R^{\prime})$是$S$的一个子环；
+					$\forall z=x+y\in S+I,x \in S,y\in I,c=a+b \in S+I,a \in S,b \in I$
 
-				同时，任意一个$S$的子环$S^{\prime}$，$R^{\prime}=\{r \in R| \varphi (r) \in S^{\prime}\}$也是一个包含了$I$的$R$的子环
-			\end{lemma}
-			\begin{proof}
-				首先先证明第一条结论。
+					$z+c=(x+y)+(a+b)=(x+a)+(y+b) \in S+I$
+					
+					$z\cdot c=(x+y)\cdot (a+b)=(x+y)\cdot a+(x+y)\cdot b\in I$
 
-				$\forall a,b \in R^{\prime}=\varphi (a)+\varphi (b)=\varphi (a+b)\in S^{\prime}$
+					$x+y+(0_R+0_R)=x+y,x+y+\left(-x+(-y)\right)=0_R$，因此$S+I$是一个子环，于是$I$也是$S+I$的理想
+					
+					随后我们验证$S\cap I$是一个理想
 
-				$\varphi (a)\cdot \varphi (b)=\varphi (ab) \in S^{\prime}$
+					先验证$S\cap I$是一个子环：$\forall x,y \in S\cap I,x+y \in S,x\cdot y \in I$，而$0_R\in S,0_R \in I \Rightarrow 0_R \in S\cap I,\forall a \in S\cap I,-a \in S,-a \in I \Rightarrow S\cap I$
 
-				$\varphi (a) + \varphi (0_R) = \varphi (a) \in S^{\prime},\varphi (a)+\varphi (-a)=\varphi (0_R)=0_S$
+					再验证$S\cap I$是一个理想：$\forall a \in S\cap I,b \in R,a\in S \Rightarrow ab \in S,a\in I \Rightarrow ab \in S\cap I$
 
-				然后证明第二条结论
+					我们考虑映射$\varphi : S/(S \cap I) \ni a + S\cap I \mapsto a+I \in (S+I)/I$
 
-				首先，因为$\forall r \in \ker \varphi ,\varphi (r) = 0$，所以一定有$\ker \varphi \in R^{\prime}$
+					它显然是一个映射，因为$a+ S\cap I=b+S\cap I \Rightarrow a-b \in S \Rightarrow a-b \in S+I \Rightarrow a+I=b+I$
+					
+					我们接下来证明它是一个同态:
 
-				$\forall a,b \in R^{\prime}$，一定有$\varphi (a),\varphi (b) \in S^{\prime}$，所以$\varphi (a+b)=\varphi (a)+\varphi (b) \in S^{\prime} \Rightarrow a+b \in R^{\prime}$
+					$\forall a+S\cap I,b+S\cap I\in S/(S\cap I),\varphi\left((a+S\cap I)+(b+S\cap I)\right)=\varphi \left((a+b)+(S\cap I)\right)=(a+b)+I=(a+I)+(b+I)=\varphi \left(a+(S\cap I)\right)+\varphi\left(b+(S\cap I)\right)$
 
-				$\varphi (a)\cdot \varphi (b)=\varphi (ab) \in S^{\prime} \Rightarrow ab \in R^{\prime}$
-
-				$\varphi (a) + \varphi (0_R) = \varphi (a) \in S^{\prime} \Rightarrow a+0_R=a \in R^{\prime},\varphi (a)+\left(-\varphi (a)\right)=0_S \in S^{\prime}\Rightarrow \varphi (-a) \in S^{\prime} \Rightarrow -a \in R^{\prime}$
-			\end{proof}
-			值得注意的是，这个引理中，第一个结论中我们没有要求子环包含同态的核，但是我们随后又提出，从$S$反向映射回来后必须包含同态的核。这并不是矛盾的，因为我们没有限定同态是双射。
-
-			\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-			\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-			%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-			%Shape: Ellipse [id:dp6992608779061074] 
-			\draw  [fill={rgb, 255:red, 248; green, 231; blue, 28 }  ,fill opacity=1 ] (61.99,147.34) .. controls (61.3,78.6) and (104.8,22.44) .. (159.14,21.9) .. controls (213.47,21.36) and (258.08,76.65) .. (258.76,145.38) .. controls (259.45,214.12) and (215.95,270.27) .. (161.61,270.81) .. controls (107.27,271.36) and (62.67,216.07) .. (61.99,147.34) -- cycle ;
-			%Shape: Ellipse [id:dp8268210443202992] 
-			\draw  [fill={rgb, 255:red, 248; green, 231; blue, 28 }  ,fill opacity=1 ] (473.66,112.42) .. controls (524.7,112.13) and (566.23,139.21) .. (566.42,172.9) .. controls (566.6,206.59) and (525.38,234.13) .. (474.34,234.42) .. controls (423.3,234.7) and (381.77,207.62) .. (381.58,173.93) .. controls (381.4,140.25) and (422.62,112.7) .. (473.66,112.42) -- cycle ;
-			%Straight Lines [id:da3594704358630838] 
-			\draw    (174,206.84) .. controls (175.68,205.18) and (177.35,205.19) .. (179,206.87) .. controls (180.65,208.55) and (182.32,208.56) .. (184,206.91) .. controls (185.67,205.26) and (187.34,205.27) .. (189,206.94) .. controls (190.66,208.61) and (192.33,208.62) .. (194,206.97) .. controls (195.68,205.32) and (197.35,205.33) .. (199,207.01) .. controls (200.66,208.68) and (202.33,208.69) .. (204,207.04) .. controls (205.68,205.39) and (207.35,205.4) .. (209,207.08) .. controls (210.66,208.75) and (212.33,208.76) .. (214,207.11) .. controls (215.68,205.46) and (217.35,205.47) .. (219,207.15) .. controls (220.66,208.82) and (222.33,208.83) .. (224,207.18) .. controls (225.68,205.53) and (227.35,205.54) .. (229,207.22) .. controls (230.66,208.89) and (232.33,208.9) .. (234,207.25) .. controls (235.68,205.6) and (237.35,205.61) .. (239,207.29) .. controls (240.66,208.96) and (242.33,208.97) .. (244,207.32) .. controls (245.68,205.67) and (247.35,205.68) .. (249,207.36) .. controls (250.66,209.03) and (252.33,209.04) .. (254,207.39) .. controls (255.68,205.74) and (257.35,205.75) .. (259,207.43) .. controls (260.66,209.1) and (262.33,209.11) .. (264,207.46) .. controls (265.68,205.81) and (267.35,205.82) .. (269,207.5) .. controls (270.66,209.17) and (272.33,209.18) .. (274,207.53) .. controls (275.68,205.88) and (277.35,205.89) .. (279,207.57) .. controls (280.66,209.24) and (282.33,209.25) .. (284,207.6) .. controls (285.67,205.95) and (287.34,205.96) .. (289,207.63) .. controls (290.65,209.31) and (292.32,209.32) .. (294,207.67) .. controls (295.67,206.02) and (297.34,206.03) .. (299,207.7) .. controls (300.65,209.38) and (302.32,209.39) .. (304,207.74) .. controls (305.67,206.09) and (307.34,206.1) .. (309,207.77) .. controls (310.65,209.45) and (312.32,209.46) .. (314,207.81) .. controls (315.67,206.16) and (317.34,206.17) .. (319,207.84) .. controls (320.65,209.52) and (322.32,209.53) .. (324,207.88) .. controls (325.67,206.23) and (327.34,206.24) .. (329,207.91) .. controls (330.65,209.59) and (332.32,209.6) .. (334,207.95) .. controls (335.67,206.3) and (337.34,206.31) .. (339,207.98) .. controls (340.65,209.66) and (342.32,209.67) .. (344,208.02) .. controls (345.67,206.37) and (347.34,206.38) .. (349,208.05) .. controls (350.65,209.73) and (352.32,209.74) .. (354,208.09) .. controls (355.67,206.44) and (357.34,206.45) .. (359,208.12) .. controls (360.65,209.8) and (362.32,209.81) .. (364,208.16) .. controls (365.67,206.51) and (367.34,206.52) .. (369,208.19) .. controls (370.66,209.86) and (372.33,209.87) .. (374,208.22) .. controls (375.68,206.57) and (377.35,206.58) .. (379,208.26) .. controls (380.65,209.93) and (382.32,209.94) .. (383.99,208.29) .. controls (385.67,206.64) and (387.34,206.65) .. (388.99,208.33) .. controls (390.65,210) and (392.32,210.01) .. (393.99,208.36) .. controls (395.67,206.71) and (397.34,206.72) .. (398.99,208.4) .. controls (400.65,210.07) and (402.32,210.08) .. (403.99,208.43) .. controls (405.67,206.78) and (407.34,206.79) .. (408.99,208.47) .. controls (410.65,210.14) and (412.32,210.15) .. (413.99,208.5) .. controls (415.67,206.85) and (417.34,206.86) .. (418.99,208.54) .. controls (420.65,210.21) and (422.32,210.22) .. (423.99,208.57) .. controls (425.67,206.92) and (427.34,206.93) .. (428.99,208.61) .. controls (430.65,210.28) and (432.32,210.29) .. (433.99,208.64) .. controls (435.67,206.99) and (437.34,207) .. (438.99,208.68) .. controls (440.65,210.35) and (442.32,210.36) .. (443.99,208.71) .. controls (445.67,207.06) and (447.34,207.07) .. (448.99,208.75) -- (451,208.76) -- (459,208.82) ;
-			\draw [shift={(462,208.84)}, rotate = 180.4] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-			%Shape: Ellipse [id:dp6694038570583041] 
-			\draw  [fill={rgb, 255:red, 144; green, 19; blue, 254 }  ,fill opacity=1 ] (160.11,35.38) .. controls (183.85,35.94) and (202.32,69.07) .. (201.36,109.38) .. controls (200.4,149.69) and (180.38,181.9) .. (156.64,181.34) .. controls (132.9,180.78) and (114.43,147.64) .. (115.39,107.34) .. controls (116.34,67.03) and (136.36,34.82) .. (160.11,35.38) -- cycle ;
-			%Shape: Ellipse [id:dp7396818051441147] 
-			\draw  [fill={rgb, 255:red, 144; green, 19; blue, 254 }  ,fill opacity=1 ] (413.25,157.99) .. controls (412.88,140.74) and (438.13,126.2) .. (469.63,125.54) .. controls (501.14,124.87) and (526.98,138.33) .. (527.34,155.58) .. controls (527.7,172.84) and (502.46,187.38) .. (470.95,188.04) .. controls (439.45,188.71) and (413.61,175.25) .. (413.25,157.99) -- cycle ;
-			%Straight Lines [id:da5729070577321602] 
-			\draw    (176,148) -- (440,156.77) ;
-			\draw [shift={(442,156.84)}, rotate = 181.9] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-			%Shape: Circle [id:dp5046306025149594] 
-			\draw  [fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (137,92) .. controls (137,78.19) and (148.19,67) .. (162,67) .. controls (175.81,67) and (187,78.19) .. (187,92) .. controls (187,105.81) and (175.81,117) .. (162,117) .. controls (148.19,117) and (137,105.81) .. (137,92) -- cycle ;
-
-			% Text Node
-			\draw (313,207.4) node [anchor=north west][inner sep=0.75pt]  [font=\Large]  {$\varphi $};
-			% Text Node
-			\draw (158,87.4) node [anchor=north west][inner sep=0.75pt]    {$I$};
-			% Text Node
-			\draw (141,188.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$R$};
-			% Text Node
-			\draw (471,196.4) node [anchor=north west][inner sep=0.75pt]  [font=\Large]  {$S$};
-			% Text Node
-			\draw (147,136.4) node [anchor=north west][inner sep=0.75pt]  [font=\large]  {$R^{\prime }$};
-			% Text Node
-			\draw (448,143.4) node [anchor=north west][inner sep=0.75pt]  [font=\large]  {$S^{\prime }$};
-
-
-			\end{tikzpicture}
-			\begin{lemma}{}{}
-				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，$I=\ker \varphi$是一个理想
-
-				那么对于包含于$I$的任意一个$R$的理想$J$，存在唯一的环同态$\chi : R/J \rightarrow S$，
+					$\varphi\left((a+S\cap I)\cdot (b+S\cap I)\right)=\varphi \left(a\cdot b+(S\cap I)\right)=a\cdot b+I=(a+I)\cdot(b+I)=\varphi \left(a+(S\cap I)\right)\cdot \varphi \left(b+(S\cap I)\right)$
 				
-				使得$\varphi =\chi \circ \pi_J$，其中$\pi_J : R \ni a \mapsto a+J \in R/I$
+					再验证它是一个双射：
 
-				并且此时$\ker \chi =I/J$
-			\end{lemma}
-			\begin{proof}
-				我们考虑我们之前曾经构造的映射：$\chi : R / J \ni a+J \mapsto \varphi (a) \in S$
+					单射性：$\forall a+(S\cap I),b+(S\cap I)\in S/(S\cap I),\varphi \left(a+(S\cap I)\right)=\varphi \left(b+(S\cap I)\right) \Rightarrow a+I=b+I \Rightarrow a-b \in I \Rightarrow a-b \in S\cap I\Rightarrow a+(S\cap I)=b+(S\cap I)$（注意隐含的条件$a,b\in S$）
 
-				我们之前已经证明了它是一个同构映射，我们接下来证明$\ker \chi = I/J$
+					满射性：$\forall (x+y)+I \in (S+I)/I,x \in S,y\in I,\varphi \left(x+(S\cap I)\right)=x+I=x+y=I$，因为$(x+y)-y=y \in I$
 
-				因为$\ker \chi =\{a+J | \chi (a+J)=0_S\}$
+					于是命题得证。
+				\end{proof}
+			\point{第三同构定理}
+			
+				在考虑第三同构定理前，我们先讨论一个引理
+				\begin{lemma}{}{}
+					设$R,S$是两个环，$\varphi : R \rightarrow S$是一个满同态，$I=\ker \varphi$是一个理想
 
-				而$\chi (a+J)=\varphi (a)$，所以$a+J \in \ker \chi \Rightarrow \varphi (a)=0 \Rightarrow a\in I$
+					那么对于包含于$I$的任意一个$R$的理想$J$，存在唯一的环同态$\chi : R/J \rightarrow S$，
+					
+					使得$\varphi =\chi \circ \pi_J$，其中$\pi_J : R \ni a \mapsto a+J \in R/I$
 
-				所以$\ker \chi = I/J$，我们接下来证明$\chi $是唯一的，并且$\varphi =\chi \circ \pi_J$
+					并且此时$\ker \chi =I/J$
+				\end{lemma}
+				\begin{proof}
+					我们考虑我们之前曾经构造的映射：$\chi : R / J \ni a+J \mapsto \varphi (a) \in S$
 
-				我们设$\psi : R/J \rightarrow S$是一个同构映射。他显然也满足$\varphi =\psi \circ \pi_J$
+					我们之前已经证明了它是一个同构映射，我们接下来证明$\ker \chi = I/J$
 
-				我们注意到，$\chi(a+J)=\varphi (a)=\psi \left(\pi_{J}(a)\right)=\psi(a+J)$
-				
-				所以一定有$\psi =\chi $，于是命题得证。
-			\end{proof}
-			\begin{them}{同构第二基本定理}{}
-				设$R$是一个环，$I,J$是$R$的两个理想，并且$I \subseteq J$。
+					因为$\ker \chi =\{a+J | \chi (a+J)=0_S\}$
 
-				那么$J/I$是$R/I$的理想，并且
-				\begin{equation}
-					(R/I)/(J/I) \cong R/J
-				\end{equation}
-			\end{them}
-			\begin{proof}
-				我们考虑满同态$\varphi : R \ni a \mapsto a+J \in R/J$
+					而$\chi (a+J)=\varphi (a)$，所以$a+J \in \ker \chi \Rightarrow \varphi (a)=0 \Rightarrow a\in I$
 
-				注意到：$\ker \varphi =\{a|a+J=0_{R/J}\}=\{a|a+J=J\}=\{a|a-0_R \in J\}=J$
+					所以$\ker \chi = I/J$，我们接下来证明$\chi $是唯一的，并且$\varphi =\chi \circ \pi_J$
 
-				运用前面的引理，那么一定有一个同态$\chi : R/I \rightarrow R/J$，并且$\ker \chi =J/I$
+					我们设$\psi : R/J \rightarrow S$是一个同构映射。他显然也满足$\varphi =\psi \circ \pi_J$
 
-				接下来运用同构第一基本定理，于是有$(R/I)/(J/I) \cong R/J$，命题得证。
-			\end{proof}
+					我们注意到，$\chi(a+J)=\varphi (a)=\psi \left(\pi_{J}(a)\right)=\psi(a+J)$
+					
+					所以一定有$\psi =\chi $，于是命题得证。
+				\end{proof}
+				\begin{them}{第三同构定理}{}
+					设$R$是一个环，$I,J$是$R$的两个理想，并且$I \subseteq J$。
+
+					那么$J/I$是$R/I$的理想，并且
+					\begin{equation}
+						(R/I)/(J/I) \cong R/J
+					\end{equation}
+				\end{them}
+				\begin{proof}
+					我们考虑满同态$\varphi : R \ni a \mapsto a+J \in R/J$
+
+					注意到：$\ker \varphi =\{a|a+J=0_{R/J}\}=\{a|a+J=J\}=\{a|a-0_R \in J\}=J$
+
+					运用前面的引理，那么一定有一个同态$\chi : R/I \rightarrow R/J$，并且$\ker \chi =J/I$
+
+					接下来运用同构第一基本定理，于是有$(R/I)/(J/I) \cong R/J$，命题得证。
+				\end{proof}
+		\end{para}
 	\section{模}
 		本节我们研究一种“环上的线性空间”，也就是模
 		\subsection{模的定义}

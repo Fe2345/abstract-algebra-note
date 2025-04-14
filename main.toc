@@ -20,22 +20,23 @@
 \contentsline {subsection}{\numberline {2.1.4}子环}{13}{subsection.2.1.4}%
 \contentsline {section}{\numberline {2.2}环的同态}{14}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}定义}{14}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}同态的核、像}{15}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}环的理想}{16}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}理想的定义}{16}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}理想的性质}{16}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}商环}{17}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}商环的定义}{17}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}同态基本定理}{18}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}同态基本定理}{18}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}同构基本定理}{19}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}模}{21}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}模的定义}{21}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}模的同态}{23}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}商模}{23}{subsection.2.6.3}%
-\contentsline {chapter}{\numberline {第三章\hspace {.3em}}Galois理论}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Galois群}{24}{section.3.1}%
-\contentsline {chapter}{\numberline {第四章\hspace {.3em}}附录}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}一些典型的域}{25}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}$F_p$}{25}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}$\symbb {Q}$}{26}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {2.2.2}同态的性质}{14}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}同态的核、像}{15}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}环的理想}{17}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}理想的定义}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}理想的性质}{17}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}商环}{18}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}商环的定义}{18}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}同态基本定理}{19}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}同态基本定理}{19}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}同构基本定理}{20}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}模}{22}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}模的定义}{22}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}模的同态}{24}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}商模}{24}{subsection.2.6.3}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}Galois理论}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Galois群}{25}{section.3.1}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}附录}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}一些典型的域}{26}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}$F_p$}{26}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}$\symbb {Q}$}{27}{subsection.4.1.2}%
