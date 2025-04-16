@@ -330,7 +330,7 @@
 			\end{proof}
 	\section{同态基本定理}
 		\subsection{同态基本定理}
-			\begin{them}{同态第一定理}{}
+			\begin{them}{同态基本定理}{}
 				设$R,S$是两个环，$\varphi : R \rightarrow S$是一个环同态，那么：
 				\begin{equation}
 					R / \ker \varphi \cong \text{Im }\varphi 
@@ -468,6 +468,50 @@
 					接下来运用同构第一基本定理，于是有$(R/I)/(J/I) \cong R/J$，命题得证。
 				\end{proof}
 		\end{para}
+		\subsection{推论}
+			\begin{them}{中国剩余定理}{}
+				如果$R$是一个交换幺环，$I_1,\cdots,I_n$是$R$的$n$个理想，并且$\forall i,j,I_i+I_j=R$，那么有：
+				\begin{equation}
+					R/(I_1 \cap \cdots \cap I_n) \cong R/I_1 \times R/I_2 \times \cdots \times R/I_n
+				\end{equation}
+			\end{them}
+			\begin{proof}
+				先证明$n=2$的情形：
+
+				设$R$是一个交换幺环，$I_1,I_2$是$R$的两个理想，并且$I_1+I_2=R$
+
+				考虑映射$\phi : R \ni r \mapsto (r+I_1,r+I_2) \in R/I_1 \times R/I_2$
+
+				我们先验证它是一个同态：
+
+				$\phi (r_1+r_2)=(r_1+r_2+I_1,r_1+r_2+I_2)=(r_1+I_1)+(r_2)+(I_2)=\varphi (r_1)+\varphi (r_2)$
+			
+				$\phi (r_1\cdot r_2)=(r_1\cdot r_2+I_1,r_1\cdot r_2+I_2)=(r_1+I_1,r_1+I_2)\cdot (r_2+I_1,r_2+I_2)=\phi (r_1)\cdot \phi (r_2)$
+			
+				它其实还是个满同态，因为$\forall a=x_1+y_1,b=x_2+y_2,x_1,x_2 \in I_1,y_1,y_2 \in I_2$
+
+				$(a+I_1,b+I_2)=(x_1+y_1+I_1,x_2+y_2+I_2)=(y_1+I_1,x_2+I_2)$，从而$\phi (y_1+x_2)=(y_1+x_2+I_1,y_1+x_2+I_2)=(y_1+I_1,x_2+I_2)=(a+I_1,b+I_2)$
+				
+				注意到：$\ker \phi =\{r|(r+I_1,r+I_2)=(I_1,I_2)\}=\{r| r \in I_1,r \in I_2\}=I_1 \cap I_2$
+			
+				利用第一同构定理得：$R/\ker \phi = R/(I_1 \cap I_2) \cong R/I_1 \times R/I_2$
+
+				接下来证明$n$的情形：
+
+				对$n$作数学归纳法，首先，我们已经证明当$n=2$时命题成立。
+
+				现在假设$R/(I_1 \cap \cdots \cap I_n) \cong R/I_1 \times R/I_2 \times \cdots \times R/I_n$成立，
+
+				我们欲证，对于$R$的理想$I_{n+1}$，如果$\forall i \neq n+1,I_i + I_{n+1} = R$，那么$R/(I_1 \cap \cdots \cap I_{n+1}) \cong R/I_1 \times  \cdots \times R/I_{n+1}$
+
+				记$J=I_1 \cap \cdots \cap I_n$，我们在第二同构定理的证明过程中已经证明了$J$是一个理想
+
+				而因为$\forall i \neq {n+1},I_i + I_{n+1} = R$，所以显然有$J+I_{n+1}=R$
+
+				所以只需要证$R/(J\cap I_{n+1})=R/J \times R/I_{n+1}$，但这正是我们已经证明的结果。
+
+				于是命题得证。
+			\end{proof}
 	\section{模}
 		本节我们研究一种“环上的线性空间”，也就是模
 		\subsection{模的定义}
